@@ -1,5 +1,7 @@
 <?php
-$msg = "안녕하세요.";
-
-echo $msg;
+include "../part/head.php";
+?>
+<h1>메인</h1>
+<?php
+include "../part/foot.php";
 ?>
