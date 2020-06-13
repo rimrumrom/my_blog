@@ -293,12 +293,19 @@ label[for] {
     max-width: 1356px;
 }
 
+/* 탑바 시작 */
 .top-bar {
     height: 100px;
     background-color: #847196;
     color: white;
 }
 
+/* 탑바 - 로고 */
+.top-bar .logo {
+    padding:0 30px;
+}
+
+/* 탑바 - 메뉴박스1 */
 .top-bar .menu-box-1 ul>li {
     position: relative;
 }
@@ -326,6 +333,7 @@ label[for] {
     color: black;
     border: 1px solid #847196;
     border-top: 0;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.5);
 }
 
 .top-bar .menu-box-1 ul>li:hover>ul {
@@ -342,3 +350,4 @@ label[for] {
     background-color: #847196;
     color:white;
 }
+/* 탑바 끝 */
