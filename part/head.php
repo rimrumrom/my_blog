@@ -10,11 +10,20 @@
     <style>
 
     </style>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/resource/common.js"></script>
 </head>
 
 <body>
-    <div class="top-bar">
+<div class="mobile-top-bar visible-sm-down flex">
+        <a href="#" class="btn-toggle-mobile-side-bar flex-as-c">
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+    </div>
+    
+    <div class="top-bar visible-md-up">
         <div class="con height-100p flex">
             <a href="#" class="logo flex-ai-c">
                 <i class="fas fa-adjust"></i>
@@ -48,3 +57,19 @@
             </div>
         </div>
     </div>
+    <div class="mobile-side-bar-bg">
+        dd
+    </div>
+    <div class="mobile-side-bar">
+        <nav class="menu-box-2">
+            <ul>
+                <li><a href="#">1차</a></li>
+                <li><a href="#">1차</a></li>
+                <li><a href="#">1차</a></li>
+                <li><a href="#">1차</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    
