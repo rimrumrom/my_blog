@@ -430,12 +430,45 @@ label[for] {
 .mobile-side-bar.active {
     left:0;
 }
+.mobile-side-bar .menu-box-2 ul>li>a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mobile-side-bar .menu-box-2 ul > li:hover > a {
+    background-color:#847196;
+    color:white;
+}
+/* SNS 서브 메뉴 시작*/
+.mobile-side-bar .menu-box-2 > ul ul {
+    display:none;
+    background-color:#C9B7D0;
+    padding-left: 20px;
+}
+.mobile-side-bar .menu-box-2 ul > li.active > ul {
+    display:block;
+}
+.mobile-side-bar .menu-box-2 ul > li > a:not(:only-child)::after {
+    content:"[+]";
+    float: right;
+}
+.mobile-side-bar .menu-box-2 ul > li.active > a:not(:only-child)::after {
+    content: "[-]";
+}
+.mobile-side-bar .menu-box-2 ul > li.active > a:not(:only-child) {
+    background-color:#C9B7D0;
+    color: black;}
+
+
+/* SNS 서브 메뉴 시작*/
+
 /* 모바일 사이드바 끝 *
 
 /*모바일 사이드바 배경색 시작*/
 .mobile-side-bar-bg {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -443,4 +476,9 @@ label[for] {
     visibility: hidden;
     transform: background-color 0.5s;     
 }
+.mobile-side-bar-bg.active {
+    background-color:rgba(0,0,0,0.7);
+    visibility: visible;
+}
+
 /*모바일 사이드바 배경색 끝*/

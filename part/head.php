@@ -58,15 +58,26 @@
         </div>
     </div>
     <div class="mobile-side-bar-bg">
-        dd
+        
     </div>
     <div class="mobile-side-bar">
         <nav class="menu-box-2">
             <ul>
-                <li><a href="#">1차</a></li>
-                <li><a href="#">1차</a></li>
-                <li><a href="#">1차</a></li>
-                <li><a href="#">1차</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About Me</a></li>
+                <li>
+                    <a href="#">SNS</a>
+                    <ul>
+                        <li><a href="https://yr981030.tistory.com/" target="_blank">티스토리</a></li>
+                        <li><a href="https://instagram.com/yrim_1030" target="_blank">인스타그램</a>
+                           <ul>
+                                <li><a href="#">Private</a></li>
+                                <li><a href="#">Public</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
