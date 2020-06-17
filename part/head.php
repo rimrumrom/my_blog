@@ -26,7 +26,7 @@
     <div class="top-bar visible-md-up">
         <div class="con height-100p flex">
             <a href="#" class="logo flex-ai-c">
-                <i class="fas fa-adjust"></i>
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FqBsEc%2FbtqETC0Tsxa%2FR8sjrrKAZDXRXMFtpr5FYk%2Fimg.png" alt="">
             </a>
             <div class="menu-box-1 flex-1-0-0">
                 <ul class="flex  height-100p">
@@ -50,17 +50,21 @@
                             SNS
                         </a>
                         <ul>
-                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Instagram</a>
+                               <ul>
+                                   <li><a href="#">Private</a></li>
+                                   <li><a href="#">Public</a></li>
+                               </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="mobile-side-bar-bg">
-        
+    <div class="mobile-side-bar-bg visible-sm-down">
     </div>
-    <div class="mobile-side-bar">
+    <div class="mobile-side-bar visible-sm-down">
         <nav class="menu-box-2">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -70,9 +74,9 @@
                     <a href="#">SNS</a>
                     <ul>
                         <li><a href="https://yr981030.tistory.com/" target="_blank">티스토리</a></li>
-                        <li><a href="https://instagram.com/yrim_1030" target="_blank">인스타그램</a>
+                        <li><a href="#">인스타그램</a>
                            <ul>
-                                <li><a href="#">Private</a></li>
+                                <li><a href="https://instagram.com/yrim_1030" target="_blank">Private</a></li>
                                 <li><a href="#">Public</a></li>
                             </ul>
                         </li>

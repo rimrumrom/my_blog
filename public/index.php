@@ -3,6 +3,16 @@ include "../part/head.php";
 ?>
 <h1 class="con">메인</h1>
 <div class="con">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi ipsum reprehenderit minus ratione, magnam placeat ullam. Molestias ab atque et quibusdam aliquam ex provident. Delectus magni sit ad expedita?
+Eum culpa illo omnis ipsum perspiciatis ipsa sunt nesciunt quod amet, quis suscipit laudantium pariatur, quibusdam enim ipsam mollitia eos repellendus deserunt odit esse necessitatibus odio vitae ex? Facilis, pariatur!
+Magni sequi asperiores debitis nihil atque! Asperiores enim voluptatibus ipsam aspernatur qui adipisci ad doloremque dignissimos illo accusamus voluptatem ipsum quis veniam magni repellat vel commodi nesciunt, modi tempore rem.
+Debitis repellat nobis repellendus eius ea aut eum explicabo, quas aspernatur laboriosam asperiores eligendi eveniet molestias. Consectetur similique natus, magni ullam explicabo repudiandae aliquid reprehenderit ducimus, nobis exercitationem laudantium sequi.
+Facilis necessitatibus obcaecati praesentium ea vitae corporis sunt. Cum amet vero, dolore exercitationem voluptatem debitis iusto itaque accusamus laboriosam ullam numquam odit reprehenderit vitae fugiat. Ullam dignissimos tenetur consectetur placeat.
+Porro illo unde consequuntur iusto corporis. Quos repellendus eligendi animi doloribus sapiente iusto, vero esse. Perspiciatis dolore suscipit mollitia debitis, optio laboriosam voluptates nam dolorum neque quam error odio iure!
+Ad porro ducimus vitae vel blanditiis ipsum voluptates quod veritatis totam ut eum laboriosam perspiciatis tenetur veniam, ipsam odio sint, inventore officia accusantium eaque adipisci doloribus. Numquam soluta cupiditate doloremque?
+Reiciendis saepe repellendus, nisi nesciunt magnam non quibusdam nobis? Voluptatum iusto expedita unde, laudantium porro odit nisi maiores quidem ipsa, quis ipsam ullam earum sed amet doloremque nihil facere voluptate.
+Doloribus nemo incidunt unde error deserunt fugit pariatur cum consequatur nesciunt, sed eum dolorem neque et corporis molestiae consectetur nisi aut molestias voluptatibus consequuntur, alias ipsam aperiam. Blanditiis, dolores exercitationem!
+Obcaecati architecto facilis vel facere! Expedita facilis tempora fugiat corrupti excepturi accusamus vero! Odit quas id nihil, ea voluptate iure illum voluptatum! Asperiores iure eligendi vitae nihil delectus nobis quibusdam.    
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti non quod quibusdam aspernatur, possimus quisquam aliquid nulla vel rerum voluptatem totam saepe eos, enim illum, dolorum libero debitis natus.
 Odit dolorum deleniti culpa aliquam a nulla iure libero. Maiores, nisi nam quisquam quaerat iusto velit sunt mollitia officiis alias reprehenderit reiciendis quos facere aperiam animi a possimus vitae cum!
 Accusantium ipsum nam, voluptates officia quo incidunt quibusdam minus velit, illum ex, iusto laboriosam maxime autem voluptate? Quis molestias beatae vel doloremque maxime aperiam, veniam earum, temporibus cum a blanditiis.
@@ -32,7 +42,8 @@ Optio voluptatum rerum laudantium consectetur placeat saepe eaque fuga quae, nih
 Consequuntur quaerat pariatur ab quas atque sapiente! Ducimus libero eaque sed aliquid asperiores vitae sapiente excepturi porro! Eos molestias voluptas quidem aliquid vero dolores ipsam voluptatum, quibusdam cumque non et?
 Rerum tenetur suscipit culpa corrupti aut quisquam iusto id obcaecati excepturi dignissimos ratione expedita eveniet quod ad consectetur, porro earum nesciunt non alias consequatur laudantium. Nihil possimus quisquam consequatur doloribus!
 Non quidem eveniet quasi quo et sunt asperiores mollitia reprehenderit praesentium, amet consequatur delectus odit? Molestias eligendi eveniet sapiente tenetur, quibusdam velit ratione deleniti, molestiae dolorem temporibus unde! Iure, minima.
-Consequatur, ab at obcaecati doloremque eligendi minima unde deleniti consequuntur praesentium velit veniam, eveniet rerum sapiente aut labore totam? Deserunt iste aspernatur voluptate nihil soluta ad possimus perspiciatis nemo neque.</div>
+Consequatur, ab at obcaecati doloremque eligendi minima unde deleniti consequuntur praesentium velit veniam, eveniet rerum sapiente aut labore totam? Deserunt iste aspernatur voluptate nihil soluta ad possimus perspiciatis nemo neque
+</div>
 <?php
 include "../part/foot.php";
 ?>
