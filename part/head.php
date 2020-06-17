@@ -16,7 +16,7 @@
 
 <body>
 <div class="mobile-top-bar visible-sm-down flex">
-        <a href="#" class="btn-toggle-mobile-side-bar flex-as-c">
+        <a href="#" onclick="return false;" class="btn-toggle-mobile-side-bar flex-as-c">
             <div></div>
             <div></div>
             <div></div>
@@ -31,29 +31,29 @@
             <div class="menu-box-1 flex-1-0-0">
                 <ul class="flex  height-100p">
                     <li class="flex flex-1-0-0">
-                        <a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">
+                        <a href="#" onclick="return false;" class="flex flex-grow-1 flex-ai-c flex-jc-c">
                             Home
                         </a>
                     </li>
                     <li class="flex flex-1-0-0">
-                        <a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">
+                        <a href="#" onclick="return false;" class="flex flex-grow-1 flex-ai-c flex-jc-c">
                             Articles
                         </a>
                     </li>
                     <li class="flex flex-1-0-0">
-                        <a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">
+                        <a href="#" onclick="return false;" class="flex flex-grow-1 flex-ai-c flex-jc-c">
                             About Me
                         </a>
                     </li>
                     <li class="flex flex-1-0-0">
-                        <a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">
+                        <a href="#" onclick="return false;" class="flex flex-grow-1 flex-ai-c flex-jc-c">
                             SNS
                         </a>
                         <ul>
-                            <li><a href="#">Instagram</a>
+                            <li><a href="#" onclick="return false;">Instagram</a>
                                <ul>
-                                   <li><a href="#">Private</a></li>
-                                   <li><a href="#">Public</a></li>
+                                   <li><a href="#" onclick="return false;">Private</a></li>
+                                   <li><a href="#" onclick="return false;">Public</a></li>
                                </ul>
                             </li>
                         </ul>
@@ -67,17 +67,17 @@
     <div class="mobile-side-bar visible-sm-down">
         <nav class="menu-box-2">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="#" onclick="return false;">Home</a></li>
+                <li><a href="#" onclick="return false;">Articles</a></li>
+                <li><a href="#" onclick="return false;">About Me</a></li>
                 <li>
-                    <a href="#">SNS</a>
+                    <a href="#" onclick="return false;">SNS</a>
                     <ul>
                         <li><a href="https://yr981030.tistory.com/" target="_blank">티스토리</a></li>
-                        <li><a href="#">인스타그램</a>
+                        <li><a href="#" onclick="return false;">인스타그램</a>
                            <ul>
                                 <li><a href="https://instagram.com/yrim_1030" target="_blank">Private</a></li>
-                                <li><a href="#">Public</a></li>
+                                <li><a href="#" onclick="return false;">Public</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -4,13 +4,12 @@ function MobileSideBar__toggle() {
     var $mobileSideBarBg = $('.mobile-side-bar-bg');
     var $html = $('html');
 
-    if ( $btn.hasClass('active') ) {
+    if ($btn.hasClass('active')) {
         $btn.removeClass('active');
         $mobileSideBar.removeClass('active');
         $mobileSideBarBg.removeClass('active');
         $html.removeClass('mobile-side-bar-actived');
-    }
-    else {
+    } else {
         $btn.addClass('active');
         $mobileSideBar.addClass('active');
         $mobileSideBarBg.addClass('active');
@@ -21,20 +20,16 @@ function MobileSideBar__toggle() {
 function MobileSideBar__init() {
     $('.btn-toggle-mobile-side-bar, .mobile-side-bar-bg').click(MobileSideBar__toggle);
 
-    $('.mobile-side-bar .menu-box-2 ul > li').click(function() {
-        if ( $(this).hasClass('active') ) {
+    $('.mobile-side-bar .menu-box-2 ul > li').click(function (e) {
+        if ($(this).hasClass('active')) {
             $(this).removeClass('active');
-        }
-        else {
+        } else {
             $(this).addClass('active');
         }
         e.stopPropagation();
     });
 }
 
-$(function() {
+$(function () {
     MobileSideBar__init();
-
-    $('.btn-toggle-mobile-side-bar').click();
-    $('.mobile-side-bar .menu-box-1 > ul > li:last-child').click();
 });
