@@ -425,7 +425,9 @@ label[for] {
 .mobile-top-bar .btn-toggle-mobile-side-bar {
     margin: 10px;
 }
-
+.mobile-top-bar > .logo  {
+    width: 40px;
+}
 /* 모바일 탑바 끝 */
 
 /* 모바일 사이드바 시작 */
@@ -478,7 +480,7 @@ label[for] {
 
 
 @media (max-width:799px) {
-    html.mobile-side-bar-actived {
+    html.mobile-side-bar-actived,  {
         overflow-y: hidden;
     }
 }
@@ -505,3 +507,58 @@ label[for] {
 }
 
 /*모바일 사이드바 배경색 끝*/
+
+.mobile-slider {
+    position: relative;
+    height: 500px;
+    user-select: none;
+}
+
+.mobile-slider > .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobile-slider > .slides > div.active {
+    opacity: 1;
+}
+.mobile-slider .side-bar > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color:red;
+}
+.mobile-slider .side-bar > div:last-child {
+    left: auto;
+    right: 0;
+}
+.mobile-slider .side-bar > div:first-child > span {
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.mobile-slider .side-bar > div > span {
+    transition: transform .3s;
+}
+.mobile-slider .side-bar > div:last-child > span {
+    position:absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.mobile-slider .side-bar > div:active > span {
+    transform: translateY(-40%);
+}
+.mobile-slider .side-bar > div > span > i {
+    font-size: 5rem;
+}
+

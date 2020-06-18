@@ -16,6 +16,15 @@ function MobileSideBar__toggle() {
         $html.addClass('mobile-side-bar-actived');
     }
 }
+function slider(){
+    var clickedBtn = $(this);
+    var 
+}
+
+
+
+
+
 
 function MobileSideBar__init() {
     $('.btn-toggle-mobile-side-bar, .mobile-side-bar-bg').click(MobileSideBar__toggle);
@@ -28,6 +37,7 @@ function MobileSideBar__init() {
         }
         e.stopPropagation();
     });
+    $('mobile-slider > side-bar > div').click(slider);
 }
 
 $(function () {

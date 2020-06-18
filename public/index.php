@@ -2,6 +2,7 @@
 include "../part/head.php";
 ?>
 <h1 class="con">메인</h1>
+<div class="test-img"></div>
 <div class="con">
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi ipsum reprehenderit minus ratione, magnam placeat ullam. Molestias ab atque et quibusdam aliquam ex provident. Delectus magni sit ad expedita?
 Eum culpa illo omnis ipsum perspiciatis ipsa sunt nesciunt quod amet, quis suscipit laudantium pariatur, quibusdam enim ipsam mollitia eos repellendus deserunt odit esse necessitatibus odio vitae ex? Facilis, pariatur!
