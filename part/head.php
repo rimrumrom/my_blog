@@ -97,6 +97,7 @@
     
     <div class="mobile-slider">
         <div class="slides">
+            <div class="active" style="background-image:url(./resource/images/main.jpeg);"></div>
             <div class="active" style="background-image:url(./resource/images/slides1.jpeg);"></div>
             <div style="background-image:url(./resource/images/slides2.jpeg);"></div>
             <div style="background-image:url(./resource/images/slides3.jpeg);"></div>
@@ -107,4 +108,3 @@
         </div>
     </div>
 
-    

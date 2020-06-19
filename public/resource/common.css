@@ -513,7 +513,15 @@ label[for] {
     height: 500px;
     user-select: none;
 }
-
+.mobile-slider > .slides > div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .mobile-slider > .slides > div {
     position: absolute;
     top: 0;
@@ -534,7 +542,6 @@ label[for] {
     left: 0;
     width: 40%;
     height: 100%;
-    background-color:red;
 }
 .mobile-slider .side-bar > div:last-child {
     left: auto;
