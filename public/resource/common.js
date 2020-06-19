@@ -1,3 +1,19 @@
+// 모바일 사이드바 시작
+
+// 모바일 사이드바 관련 준비
+function MobileSideBar__init() {
+    $('.btn-toggle-mobile-side-bar, .mobile-side-bar-bg').click(MobileSideBar__toggle);
+
+    $('.mobile-side-bar .menu-box-2 ul > li').click(function (e) {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+        e.stopPropagation();
+    });
+}
+
 function MobileSideBar__toggle() {
     var $btn = $('.btn-toggle-mobile-side-bar');
     var $mobileSideBar = $('.mobile-side-bar');
@@ -16,7 +32,16 @@ function MobileSideBar__toggle() {
         $html.addClass('mobile-side-bar-actived');
     }
 }
-function slider(){
+// 모바일 사이드바 끝
+
+// 슬라이더 시작
+
+// 슬라이더 관련 준비
+function Slider__init() {
+    $('.slider > .side-bars > div').click(Slider__onSideBtnClicked);
+}
+
+function Slider__onSideBtnClicked() {
     var $this = $(this);
     var $slider = $this.parent().parent();
     var $current = $slider.find('> .slides > .active');
@@ -28,8 +53,7 @@ function slider(){
         if ($post.length == 0) {
             $post = $slider.find('> .slides > :last-child');
         }
-    }
-    else {
+    } else {
         $post = $current.next();
         if ($post.length == 0) {
             $post = $slider.find('> .slides > :first-child');
@@ -38,21 +62,12 @@ function slider(){
     $current.removeClass('active');
     $post.addClass('active');
 }
-
-function MobileSideBar__init() {
-    $('.btn-toggle-mobile-side-bar, .mobile-side-bar-bg').click(MobileSideBar__toggle);
-
-    $('.mobile-side-bar .menu-box-2 ul > li').click(function (e) {
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).addClass('active');
-        }
-        e.stopPropagation();
-    });
-    $('mobile-slider > side-bar > div').click(slider);
-}
+// 슬라이더 끝
 
 $(function () {
+    // 모바일 사이드바 작동
     MobileSideBar__init();
+
+    // 슬라이더 작동
+    Slider__init();
 });
