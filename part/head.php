@@ -153,7 +153,7 @@
         <div class="slides">
             <div class="active" style="background-image:url(/resource/images/main.jpeg.jpg);"></div>
             <div style="background-image:url(/resource/images/slides7.jpeg);"></div>
-            <div style="background-image:url(/resource/images/slides13.jpg);"></div>
+            <div style="background-image:url(/resource/images/slides11.jpg);"></div>
             <div style="background-image:url(/resource/images/slides4.jpeg);"></div>
         </div>
         <div class="side-bars">
@@ -161,3 +161,4 @@
             <div><span><i class="fas fa-angle-right"></i></span></div>
         </div>
     </div>
+

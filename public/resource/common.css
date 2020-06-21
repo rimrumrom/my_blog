@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Philosopher:ital@1&family=Roboto:wght@300&display=swap');
 
 html {
-    font-family: "Philosopher","Parisienne","Roboto","Noto Sans KR", sans-serif;
+    font-family: "Philosopher", "Parisienne", "Roboto", "Noto Sans KR", sans-serif;
 }
 
 /* 노말라이즈 */
@@ -363,12 +363,12 @@ label[for] {
 }
 
 .top-bar .logo>.logo-svg {
-    width:60px;
+    width: 60px;
     padding: 30px;
 }
 
 .top-bar .logo>.logo-svg:hover path {
-    fill:#275293;
+    fill: #275293;
 }
 
 
@@ -428,26 +428,28 @@ label[for] {
     position: fixed;
     height: 50px;
     background-color: #419CEC;
-    top:0;
-    left:0;
-    width:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
     margin: 10px;
 }
-.mobile-top-bar > .logo {
+
+.mobile-top-bar>.logo {
     width: 40px;
 }
-.mobile-top-bar > .logo > .logo-svg {
-    fill:white;
+
+.mobile-top-bar>.logo>.logo-svg {
+    fill: white;
 }
 
 /* 모바일 탑바 끝 */
 
 /* 모바일 사이드바 시작 */
-.mobile-side-bar {
+/*.mobile-side-bar {
     position: fixed;
     top: 50px;
     left: -300px;
@@ -457,7 +459,16 @@ label[for] {
     transition: left .3s;
     z-index: 10;
 }
-
+*/.mobile-side-bar {
+    position: fixed;
+    top: 50px;
+    left: -300px;
+    width: 300px;
+    bottom: 0;
+    background-color: white;
+    transition: left .3s;
+    z-index: 10;
+}
 .mobile-side-bar.active {
     left: 0;
 }
@@ -497,7 +508,9 @@ label[for] {
 
 
 @media (max-width:799px) {
-    html.mobile-side-bar-actived, html.mobile-side-bar-actived > body {
+
+    html.mobile-side-bar-actived,
+    html.mobile-side-bar-actived>body {
         overflow-y: hidden;
     }
 }
@@ -516,7 +529,7 @@ label[for] {
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
     transition: background-color .1s, visibility .1s;
-    z-index:10;
+    z-index: 10;
 }
 
 .mobile-side-bar-bg.active {
@@ -532,6 +545,7 @@ label[for] {
     height: 500px;
     user-select: none;
 }
+
 /* .slider > .slides > div:nth-child(2) {
     position: absolute;
     top: 0;
@@ -541,7 +555,7 @@ label[for] {
     background-repeat: no-repeat;
     background-position: center;
 }*/
-.slider > .slides > div {
+.slider>.slides>div {
     position: absolute;
     top: 0;
     left: 0;
@@ -552,39 +566,59 @@ label[for] {
     background-repeat: no-repeat;
     background-position: center;
     transition: opacity 1s;
-    background-color:black;
+    background-color: black;
 }
-.slider > .slides > div.active {
+
+.slider>.slides>div.active {
     opacity: 1;
 }
-.slider > .side-bars > div {
+
+.slider>.side-bars>div {
     position: absolute;
     top: 0;
     left: 0;
     width: 40%;
     height: 100%;
-    cursor:pointer;
+    cursor: pointer;
 }
-.slider > .side-bars > div:last-child {
+
+.slider>.side-bars>div:last-child {
     left: auto;
     right: 0;
 }
-.slider > .side-bars > div > span {
-    position:absolute;
+
+.slider>.side-bars>div>span {
+    position: absolute;
     top: 50%;
     left: inherit;
     right: inherit;
     transform: translateY(-50%);
-    margin:0 20px;
+    margin: 0 20px;
 }
-.slider > .side-bars > div > span {
+
+.slider>.side-bars>div>span {
     transition: transform .3s;
 }
-.slider > .side-bars > div:active > span {
+
+.slider>.side-bars>div:active>span {
     transform: translateY(-40%);
 }
-.slider > .side-bars > div > span > i {
+
+.slider>.side-bars>div>span>i {
     font-size: 2rem;
-    color:white;
+    color: white;
 }
+
 /* 슬라이더 끝 */
+
+/*아바타 시작*/
+.avater-box>.avater {
+    background-color: #419CEC;
+}
+
+.avater-box>.avater>img {
+    border-radius: 100px;
+    margin-left: 300px;
+}
+
+/*아바타 끝*/
