@@ -1,11 +1,5 @@
-/* 폰트적용 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Philosopher:ital@1&family=Roboto:wght@300&display=swap');
-
 html {
-    font-family: "Philosopher", "Parisienne", "Roboto", "Noto Sans KR", sans-serif;
+    font-family: "Philosopher", "Noto Sans KR", sans-serif;
 }
 
 /* 노말라이즈 */
@@ -431,7 +425,7 @@ label[for] {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 12;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
@@ -459,18 +453,20 @@ label[for] {
     transition: left .3s;
     z-index: 10;
 }
-*/.mobile-side-bar {
+*/
+.mobile-side-bar {
     position: fixed;
-    top: 50px;
-    left: -300px;
-    width: 300px;
-    bottom: 0;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
     background-color: white;
-    transition: left .3s;
     z-index: 10;
 }
+
 .mobile-side-bar.active {
-    left: 0;
+    top: 50px;
+    bottom: 0;
+    transition: bottom .3s;
 }
 
 .mobile-side-bar .menu-box-2 ul>li>a {
@@ -612,13 +608,23 @@ label[for] {
 /* 슬라이더 끝 */
 
 /*아바타 시작*/
-.avater-box>.avater {
+.avater-box {
     background-color: #419CEC;
+}
+.avater-box>.avater {
+    width: 200px;
+    margin-left: 230px;
 }
 
 .avater-box>.avater>img {
-    border-radius: 100px;
-    margin-left: 300px;
+    width: 100%;
+    border-radius: 100%;
 }
-
+@media (max-width: 799px) {
+    .avater-box>.avater {
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /*아바타 끝*/
