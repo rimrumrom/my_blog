@@ -5,11 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>블로그</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Philosopher:ital@1&family=Roboto:wght@300&display=swap">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="/resource/common.css">
     <link rel="icon" href="./resource/images/favicon.png">
@@ -24,7 +19,7 @@
     <div class="top-bar visible-md-up">
         <div class="con height-100p flex">
             <a href="/" class="logo flex-ai-c">
-                <svg version="1.1" class="logo-svg flex-ai-c" xmlns="http://www.w3.org/2000/svg"
+                <svg version="1.1" class="logo-svg" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
                     style="enable-background:new 0 0 100 100;" xml:space="preserve">
                     <style type="text/css">
@@ -85,6 +80,18 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="top-bar-icon flex">
+                <div class="user flex flex-1-0-0 flex-ai-c flex-jc-c">
+                    <a href="#">
+                        <img src="/resource/images/user1.png" alt="">
+                    </a>
+                </div>
+                <div class="text flex flex-1-0-0 flex-ai-c flex-jc-c">
+                    <a href="#">
+                        <img src="/resource/images/text1.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -153,17 +160,3 @@
             </ul>
         </nav>
     </div>
-
-    <div class="slider-1 slider">
-        <div class="slides">
-            <div class="active" style="background-image:url(/resource/images/main.jpeg.jpg);"></div>
-            <div style="background-image:url(/resource/images/slides7.jpeg);"></div>
-            <div style="background-image:url(/resource/images/slides11.jpg);"></div>
-            <div style="background-image:url(/resource/images/slides4.jpeg);"></div>
-        </div>
-        <div class="side-bars">
-            <div><span><i class="fas fa-angle-left"></i></span></div>
-            <div><span><i class="fas fa-angle-right"></i></span></div>
-        </div>
-    </div>
-

@@ -1,6 +1,20 @@
 <?php
 include "../part/head.php";
 ?>
+
+<div class="slider-1 slider">
+    <div class="slides">
+        <div class="active" style="background-image:url(/resource/images/main1.png);"></div>
+        <div style="background-image:url(/resource/images/slides11.jpg);"></div>
+        <div style="background-image:url(/resource/images/slides7.jpeg);"></div>
+        <div style="background-image:url(/resource/images/main.jpg);"></div>
+    </div>
+    <div class="side-bars">
+        <div><span><i class="fas fa-angle-left"></i></span></div>
+        <div><span><i class="fas fa-angle-right"></i></span></div>
+    </div>
+</div>
+
 <h1 class="con">메인</h1>
 <div class="test-img"></div>
 <div class="con">

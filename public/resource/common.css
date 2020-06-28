@@ -1,5 +1,11 @@
+/* 폰트적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Philosopher:ital@1&family=Roboto:wght@300&display=swap');
+
 html {
-    font-family: "Philosopher", "Noto Sans KR", sans-serif;
+    font-family: "Philosopher", "Parisienne", "Roboto", "Noto Sans KR", sans-serif;
 }
 
 /* 노말라이즈 */
@@ -339,15 +345,17 @@ label[for] {
 }
 
 /* 커스텀 */
-
 .con {
-    max-width: 1356px;
+    max-width: 1400px;
+}
+.con.con-2{
+    max-width: 1056px;
 }
 
 /* 탑바 시작 */
 .top-bar {
     height: 100px;
-    background-color: #419CEC;
+    background-color: #01386D;
     color: white;
 }
 
@@ -362,7 +370,7 @@ label[for] {
 }
 
 .top-bar .logo>.logo-svg:hover path {
-    fill: #275293;
+    fill: black;
 }
 
 
@@ -393,7 +401,7 @@ label[for] {
     width: 100%;
     background-color: white;
     color: black;
-    border: 1px solid #419CEC;
+    border: 1px solid #01386D;
     border-top: 0;
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
     z-index: 12;
@@ -411,21 +419,30 @@ label[for] {
 }
 
 .top-bar .menu-box-1>ul ul>li:hover>a {
-    background-color: #419CEC;
+    background-color: #01386D;
     color: white;
 }
 
 /* 탑바 끝 */
 
+/* 탑바 아이콘 시작 */
+.top-bar-icon div > img {
+    width: 20px;
+}
+.top-bar-icon > div:first-child {
+    margin-right: 50px;
+}
+/* 탑바 아이콘끝 */
+
 /* 모바일 탑바 시작 */
 .mobile-top-bar {
     position: fixed;
     height: 50px;
-    background-color: #419CEC;
+    background-color: #01386D;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 12;
+    z-index: 10;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
@@ -453,20 +470,18 @@ label[for] {
     transition: left .3s;
     z-index: 10;
 }
-*/
-.mobile-side-bar {
+*/.mobile-side-bar {
     position: fixed;
-    left: 0;
-    width: 100%;
-    bottom: 100%;
+    top: 50px;
+    left: -300px;
+    width: 300px;
+    bottom: 0;
     background-color: white;
+    transition: left .3s;
     z-index: 10;
 }
-
 .mobile-side-bar.active {
-    top: 50px;
-    bottom: 0;
-    transition: bottom .3s;
+    left: 0;
 }
 
 .mobile-side-bar .menu-box-2 ul>li>a {
@@ -498,7 +513,7 @@ label[for] {
 }
 
 .mobile-side-bar .menu-box-2 ul>li.active>a:not(:only-child) {
-    background-color: #419CEC;
+    background-color: #01386D;
     color: white;
 }
 
@@ -538,19 +553,23 @@ label[for] {
 /* 슬라이더 시작 */
 .slider {
     position: relative;
-    height: 500px;
+    height: 880px;
     user-select: none;
 }
 
-/* .slider > .slides > div:nth-child(2) {
+.slider>.slides>div:first-child {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}*/
+    transition: opacity 1s;
+    background-color:#5c8fc4;
+}
 .slider>.slides>div {
     position: absolute;
     top: 0;
@@ -562,9 +581,7 @@ label[for] {
     background-repeat: no-repeat;
     background-position: center;
     transition: opacity 1s;
-    background-color: black;
 }
-
 .slider>.slides>div.active {
     opacity: 1;
 }
@@ -608,23 +625,13 @@ label[for] {
 /* 슬라이더 끝 */
 
 /*아바타 시작*/
-.avater-box {
-    background-color: #419CEC;
-}
 .avater-box>.avater {
-    width: 200px;
-    margin-left: 230px;
+    background-color: #01386D;
 }
 
 .avater-box>.avater>img {
-    width: 100%;
-    border-radius: 100%;
+    border-radius: 100px;
+    margin-left: 300px;
 }
-@media (max-width: 799px) {
-    .avater-box>.avater {
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+
 /*아바타 끝*/
