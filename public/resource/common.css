@@ -1,11 +1,10 @@
 /* 폰트적용 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Parisienne&family=Philosopher:ital@1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=PT+Serif+Caption&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=PT+Serif+Caption&family=Philosopher:ital@0;1&display=swap');
 
 html {
-    font-family: "Philosopher", "Parisienne", "Roboto", "Noto Sans KR", sans-serif;
+    font-family: "Philosopher", "PT Serif Caption", "Noto Sans KR", sans-serif;
 }
 
 /* 노말라이즈 */
@@ -344,11 +343,16 @@ label[for] {
     opacity: 0;
 }
 
+.bgc {
+    background-color: #01386D;
+}
+
 /* 커스텀 */
 .con {
     max-width: 1400px;
 }
-.con.con-2{
+
+.con.con-2 {
     max-width: 1056px;
 }
 
@@ -384,8 +388,8 @@ label[for] {
 }
 
 .top-bar .menu-box-1 ul>li>a {
-    font-weight: bold;
     font-size: 25px;
+    font-family:
 }
 
 .top-bar .menu-box-1>ul>li:hover>a {
@@ -426,12 +430,14 @@ label[for] {
 /* 탑바 끝 */
 
 /* 탑바 아이콘 시작 */
-.top-bar-icon div > img {
+.top-bar-icon div>img {
     width: 20px;
 }
-.top-bar-icon > div:first-child {
+
+.top-bar-icon>div:first-child {
     margin-right: 50px;
 }
+
 /* 탑바 아이콘끝 */
 
 /* 모바일 탑바 시작 */
@@ -470,7 +476,8 @@ label[for] {
     transition: left .3s;
     z-index: 10;
 }
-*/.mobile-side-bar {
+*/
+.mobile-side-bar {
     position: fixed;
     top: 50px;
     left: -300px;
@@ -480,6 +487,7 @@ label[for] {
     transition: left .3s;
     z-index: 10;
 }
+
 .mobile-side-bar.active {
     left: 0;
 }
@@ -568,8 +576,9 @@ label[for] {
     background-repeat: no-repeat;
     background-position: center;
     transition: opacity 1s;
-    background-color:#5c8fc4;
+    background-color: #5c8fc4;
 }
+
 .slider>.slides>div {
     position: absolute;
     top: 0;
@@ -582,6 +591,7 @@ label[for] {
     background-position: center;
     transition: opacity 1s;
 }
+
 .slider>.slides>div.active {
     opacity: 1;
 }
@@ -635,3 +645,61 @@ label[for] {
 }
 
 /*아바타 끝*/
+
+/*주간 작업 배너 시작*/
+.latest-work {
+    background-color: #01386D;
+}
+
+.latest-work .text {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*주간 작업 배너 끝*/
+
+/*글 게시물 꾸미기 시작*/
+.id {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.id-regDate {
+    margin-top: 20px;
+}
+
+.postbt-icon-1 {
+    margin-bottom: 10px;
+}
+
+.line-bar-1>.line {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(92, 143, 196, 0.6);
+    margin-bottom: 20px;
+}
+
+.line-bar-2>.line {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(92, 143, 196, 0.6);
+    margin-bottom: 50px;
+}
+
+.postbt-icon-2>div {
+    padding: 8px 20px 8px 20px;
+    border: 2px solid rgba(92, 143, 196, 0.6);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.postbt-icon-2 div {
+    margin-left: 10px;
+}
+
+.postbt-icon-2 .heart>a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*글 게시물 꾸미기 끝*/

@@ -2,7 +2,7 @@
 include "../part/head.php";
 ?>
 <?php
-$conn = mysqli_connect("127.0.0.1", "root", "sbs123414", "blog", 3306);
+$conn = mysqli_connect("site18.blog.oa.gg", "site18", "sbs123414", "site18", 3306);
 $id = $_GET['id'];
 $sql = "
 SELECT *
@@ -44,7 +44,7 @@ $row = mysqli_fetch_assoc($rs);
 </div>
 
 <h1 class="con con-2"><?=$row['title']?></h1>
-<div class="con con-2 flex">
+<div class="id-regDate con con-2 flex">
     <div class="id">
         작성자 : 장희성
     </div>
@@ -56,17 +56,50 @@ $row = mysqli_fetch_assoc($rs);
 <div class="con con-2" style="display:none;" id="origin1">
     <?=$row['body']?>
 </div>
-<div class="con con-2 flex">
+<div class="postbt-icon-1 con con-2 flex">
     <div class="heart">
-        <img src="/resource/images/heart.png" alt="">
+        <a href="#">
+            <img src="/resource/images/heart.png" alt="">
+        </a>
     </div>
     <div class="comment">
-        <img src="/resource/images/comment.png" alt="">
+        <a href="#">
+            <img src="/resource/images/comment.png" alt="">
+        </a>
     </div>
+</div>
+
+<div class="line-bar-1 con con-2">
+    <div class="line"></div>
 </div>
 
 <div class="con con-2" id="viewer1">
 
+</div>
+
+<div class="postbt-icon-2 con con-2 flex">
+    <div class="flex">
+        <div class="heart flex">
+            <a href="#" class="flex-ai-c flex-jc-c">
+                <img src="/resource/images/heart2.png" alt="">
+                공감
+            </a>
+        </div>
+        <div class="down flex">
+            <a href="#" class="flex-ai-c flex-jc-c">
+                <img src="/resource/images/down.png" alt="">
+            </a>
+        </div>
+        <div class="more flex">
+            <a href="#" class="flex-ai-c flex-jc-c">
+                <img src="/resource/images/more.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="line-bar-2 con con-2">
+    <div class="line"></div>
 </div>
 
 <script>
