@@ -53,9 +53,7 @@ $row = mysqli_fetch_assoc($rs);
     </div>
 </div>
 
-<div class="con con-2" style="display:none;" id="origin1">
-    <?=$row['body']?>
-</div>
+<div class="con con-2" style="display:none;" id="origin1"><?=$row['body']?></div>
 <div class="postbt-icon-1 con con-2 flex">
     <div class="heart">
         <a href="#">

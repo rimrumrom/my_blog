@@ -702,4 +702,15 @@ label[for] {
     color: rgba(0, 0, 0, 0.6);
 }
 
+.latest-work .text{
+    color: white;
+    font-family: "PT Serif Caption", "Noto Sans KR", sans-serif;
+    font-size: 64px;
+    line-height: 3;
+    /*line-height 을 주면 line에 있는 높이가 커짐*/
+}
+
+.latest-work .kakao-work {
+    margin-top: 120px;
+}
 /*글 게시물 꾸미기 끝*/
