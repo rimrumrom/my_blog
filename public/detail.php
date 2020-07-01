@@ -1,4 +1,8 @@
 <?php
+include "../part/head_head.php";
+?>
+<!--링크 거는 구간-->
+<?php
 include "../part/head.php";
 ?>
 <?php

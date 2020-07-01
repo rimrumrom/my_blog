@@ -1,0 +1,8 @@
+.article-list-box > ul > li > a {
+    padding:5px 0;
+}
+
+.article-list-box > ul > li:hover > a {
+    background-color:black;
+    color:white;
+}

@@ -1,7 +1,10 @@
 <?php
+include "../part/head_head.php";
+?>
+<!--링크 거는 구간-->
+<?php
 include "../part/head.php";
 ?>
-
 <div class="slider-1 slider">
     <div class="slides">
         <div class="active" style="background-image:url(/resource/images/main1.png);"></div>
