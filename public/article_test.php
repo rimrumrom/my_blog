@@ -37,22 +37,35 @@ while ( true ) {
 
     $articleRows[] = $row;
 }
+
 ?>
 
-<a href="/articles.php?cateItemId=1">1번 게시판</a>
-<a href="/articles.php?cateItemId=2">2번 게시판</a>
-<a href="/articles.php?cateItemId=3">3번 게시판</a>
-<a href="/articles.php?cateItemId=4">4번 게시판</a>
+<div class="article-post-bt con con-2">
+    <a href="/articles.php?cateItemId=1">1번 게시판</a>
+    <a href="/articles.php?cateItemId=2">2번 게시판</a>
+    <a href="/articles.php?cateItemId=3">3번 게시판</a>
+    <a href="/articles.php?cateItemId=4">4번 게시판</a>
+</div>
 
-<div class="article-wrap">
-    <?php foreach ($articleRows as $aa ) { ?>
-        <div class="article">
-            <a href="/detail.php?id=<?=$aa['id']?>">게시물 번호 : <?=$aa['id']?></a>
-            <div>날짜 : <?=$aa['regDate']?></div>
-            <div>제목 : <?=$aa['title']?></div>
-            <div>내용 : <?=$aa['body']?></div>
-        </div>
-    <?php } ?>
+<style>
+
+</style>
+
+<div class="article-list-box con con-2">
+    <ul class="flex flex-wrap">
+        <?php foreach ( $articleRows as $aa ) { ?>
+        <li>
+            <a class="articleContent" href="/detail.php?id=<?=$aa['id']?>">
+                <div class="img-box-wrap">
+                    <div class="img-box" style=" background-image:url(<?=$aa['thumbImgUrl']?>); "></div>
+                </div>
+                <div class="txt-box title"><?=$aa['title']?></div>
+                <div class="txt-box summary"><?=$aa['summary']?></div>
+                <div class="txt-box reg-date"><?=$aa['regDate']?></div>
+            </a>
+        </li>
+        <?php } ?>
+    </ul>
 </div>
 
 <?php

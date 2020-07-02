@@ -276,6 +276,9 @@ label[for] {
     flex-direction: row;
     flex-wrap: nowrap;
 }
+* > .flex-wrap {
+    flex-wrap:wrap;
+}
 
 *>.flex-ch-basis-0 {
     display: flex;
@@ -435,6 +438,7 @@ label[for] {
 }
 
 .top-bar-icon>div:first-child {
+    margin-left: 30px;
     margin-right: 50px;
 }
 

@@ -1,8 +1,41 @@
-.article-list-box > ul > li > a {
-    padding:5px 0;
+
+.article-list-box>ul {
+    margin: 0 -20px;
+    
 }
 
-.article-list-box > ul > li:hover > a {
-    background-color:black;
-    color:white;
+.article-list-box>ul>li {
+    width: 25%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+/*게시물 상자*/
+.article-list-box>ul>li>.articleContent {
+    display: block;
+}
+.article-list-box>ul>li>.articleContent>.img-box-wrap {
+    overflow: hidden;
+}
+.article-list-box>ul>li>.articleContent>.img-box-wrap>.img-box {
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.article-list-box>ul>li>.articleContent>.img-box-wrap:hover > .img-box {
+    transform: scale(0.9);
+}
+
+
+.article-list-box>ul>li>.articleContent>.img-box-wrap>.img-box::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.article-list-box>ul>li>.articleContent>.txt-box {
+    font-size: 12px;
+}
+
+.article-list-box>ul>li>.articleContent>.title{
+    font-size: 16px;
 }
