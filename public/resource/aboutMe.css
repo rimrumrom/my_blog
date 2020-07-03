@@ -1,0 +1,26 @@
+.aboutme-bn-box {
+    position: relative;
+    height: 880px;
+    user-select: none;
+}
+.aboutme-bn-box>.main-bn>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aboutme-bn-box>.main-img>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
