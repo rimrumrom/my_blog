@@ -15,6 +15,15 @@ include "../part/head.php";
     <div class="main-img">
         <div style="background-image:url(/resource/images/aboutmeimg2.png);"></div>
     </div>
+    <div class="icons">
+        <div class="ic-rock">
+            <img src="/resource/images/rock.png" alt=""></div>
+        <div class="ic-Scissors">
+            <img src="/resource/images/Scissors.png" alt="">
+        </div>
+        <div class="ic-Paper">
+            <img src="/resource/images/Paper.png" alt=""></div>
+    </div>
 </div>
 
 
