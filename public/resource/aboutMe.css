@@ -1,3 +1,4 @@
+/*메인배너 시작*/
 .aboutme-bn-box {
     position: relative;
     height: 890px;
@@ -25,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
+/* 가위바위보 시작*/
 .aboutme-bn-box>.icons img {
     width: 300px;
     position: absolute;
@@ -60,7 +61,52 @@
     transform: rotate(-15deg) scale(1.1);
     cursor: pointer;
 }
+/* 가위바위보 시작*/
 
-.jb:hover {
-    transform: rotate(45deg);
+/*메인배너 끝*/
+
+/*취미시작*/
+.gallery>.card-boxcard>.card> {
+    width: 25%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
+.hobby>.link {
+    margin-top: 60px;
+}
+.hobby>.link>a {
+    font-size:64px;
+    font-weight:bold;
+    color:#0A4176;
+    font-family: "PT Serif Caption", "Noto Sans KR", sans-serif;
+    margin-bottom: 20px;
+}
+.hobby>.text {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.hobby >.line-1{
+    background-color: #5C8FC4;
+    height:5px;
+    margin:30px 100px 10px 100px;
+    opacity:.7;
+}
+
+.hobby >.line-2{
+    background-color: #5C8FC4;
+    height:2px;
+    margin:0 100px;
+    opacity:.6;
+}
+.hobby>.gallery {
+    margin-top:60px;
+}
+.hobby>.gallery>div>div {
+    width:25%;
+    padding:20px;
+    box-sizing: border-box;
+}
+.gallery>div>div>img {
+    display: block;
+}
+/*취미끝*/

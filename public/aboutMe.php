@@ -25,7 +25,25 @@ include "../part/head.php";
             <img src="/resource/images/Paper.png" alt=""></div>
     </div>
 </div>
-
+<!--취미-->
+<div class="hobby con con-2">
+    <div class="link flex flex-ai-c flex-jc-c"><a href="#">hobby</a></div>
+    <div class="text flex flex-ai-c flex-jc-c">"저는 그림 그리는 것을 굉장히 좋아해요"</div>
+    <div class="line line-1 flex flex-ai-c flex-jc-c"></div>
+    <div class="line line-2 flex flex-ai-c flex-jc-c"></div>
+    <div class="gallery">
+        <div class="flex flex-wrap">
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/1.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/2.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/3.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/4.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/5.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/6.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/7.jpg?raw=true" alt=""></div>
+            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/8.jpg?raw=true" alt=""></div>
+        </div>
+    </div>
+</div>
 <!--어바웃미-->
 <div class="aboutme">
     <p></p>
