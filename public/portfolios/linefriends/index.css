@@ -331,7 +331,7 @@ label[for] {
 
 /* 커스텀 */
 .con {
-    max-width: 1180px;
+    max-width: 1280px;
 }
 
 .top-bar {
@@ -343,18 +343,27 @@ label[for] {
     z-index: 100;
 }
 
+.top-bar>.logo {
+    display: block;
+    width: 174px;
+    height: 24px;
+    background: url(https://github.com/rimrumrom/img1/blob/3fe4846f6355597ab5097ee7d13f64787914c44f/portfolios/linefriends/img_logo.png?raw=true);
+}
+
 .top-bar>.menu-box-1>ul>li:first-child {
-    margin-left: 70px;
+    margin-left: 80px;
 }
 
 .top-bar>.menu-box-1>ul>li {
-    margin-right: 63px;
+    margin-right: 68px;
+    font-family: Roboto;
 }
 
 .top-bar>.menu-box-1>ul>li>a {
     color: white;
     white-space: nowrap;
     font-size: 12px;
+    letter-spacing: 1px;
     position: relative;
 }
 
@@ -367,26 +376,37 @@ label[for] {
     width: 100%;
     opacity: 0;
 }
+
 .top-bar>.menu-box-1>ul>li>a:before {
-            transition: all 0.2s ease;
-  }
-  
+    transition: all 0.2s ease;
+}
+
 .top-bar>.menu-box-1>ul>li>a:hover:before {
     opacity: 1.0;
 }
 
-.top-bar>.logo {
-    border: 1px solid black;
-    display: block;
-    width: 174px;
-    height: 24px;
-    background: url(https://github.com/rimrumrom/img1/blob/3fe4846f6355597ab5097ee7d13f64787914c44f/portfolios/linefriends/img_logo.png?raw=true);
+.box {
+    padding-right: 60px;
 }
 
 .box>a {
     color: white;
     white-space: nowrap;
     font-size: 12px;
+    font-family: Roboto;
+}
+
+
+
+
+
+/*
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color:black;
 }
 
 .container>.bn {
@@ -394,8 +414,12 @@ label[for] {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: url(https://github.com/rimrumrom/img1/blob/3fe4846f6355597ab5097ee7d13f64787914c44f/portfolios/linefriends/b48fa919ea9f40518b77d10f51691602.jpg?raw=true) repeat;
+    height: 100vh;
+    background: url(https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/linefriends/bn1.jpg) repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .container>.bn-bg {
@@ -406,4 +430,102 @@ label[for] {
     height: 100%;
     background: url(../img/bg_dim.png) repeat;
     z-index: 10;
+}
+*/
+
+
+
+/* 슬라이더 공통 */
+.slider {
+    position: relative;
+}
+
+.slider>.pages {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+}
+
+.slider>.pages>div {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
+.slider>.pages>div:hover,
+.slider>.pages>div.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slider>.slides::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.linefriends.com/img/bg_dim.png);
+}
+
+.slider>.slides>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slider>.slides>div.active {
+    opacity: 1;
+}
+
+/*
+.slider > .side-btns > div {
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100px;
+    height:100px;
+    background-color:;
+    cursor:pointer;
+    transform:translateY(-50%);
+    margin:0 30px;
+}
+*/
+.slider>.side-btns>div:last-child {
+    left: auto;
+    right: 0;
+}
+
+/* 슬라이더 1 */
+.slider-1 {
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.slider>.side-btns>div {
+    position: absolute;
+    top: 50%;
+    width: 31px;
+    height: 60px;
+    margin-top: -30px;
+    background: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/spr.png?raw=true) no-repeat;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.slider>.side-btns>.prev {
+    background-position: 0 -230px;
+}
+
+.slider>.side-btns>.next {
+    background-position: 0 -160px;
 }
