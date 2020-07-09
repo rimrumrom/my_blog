@@ -1,4 +1,4 @@
-$(".slider > .pages > div").click(function () {
+function slide(){
     var $this = $(this);
     var $slider = $this.closest(".slider");
 
@@ -9,9 +9,8 @@ $(".slider > .pages > div").click(function () {
 
     $slider.find(" > .slides > .active").removeClass("active");
     $slider.find(" > .slides > div").eq(index).addClass("active");
-});
-
-$(".slider > .side-btns > div").click(function () {
+}
+function dotSlide(){
     var $this = $(this);
     var index = $this.index();
     var $slider = $this.closest(".slider");
@@ -34,7 +33,37 @@ $(".slider > .side-btns > div").click(function () {
     }
 
     $post.click();
+}
+
+
+
+function slide__init(){
+    $(".slider > .pages > div").click(slide);
+    $(".slider > .side-btns > div").click(dotSlide);
+}
+
+
+
+$(function(){
+    slide__init();
+})
+
+$(document).ready(function(){
+    $('.select-lang').click(function() {
+        if ( $(this).hasClass('active') )
+        {
+            $(this).removeClass('active');
+        }
+        else
+        {
+            $(this).addClass('active');
+        }
+    });
 });
+
+
+
+
 /*
 function Slider1__moveNext() {
     var $slider = $('.slider-1');

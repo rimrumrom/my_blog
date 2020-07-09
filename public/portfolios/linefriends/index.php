@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="./resource/images/favicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
+    <!--상단바-->
     <div class="top-bar con flex">
         <a href="#" class="logo"></a>
         <nav class="menu-box-1 flex-1-0-0">
@@ -27,18 +28,23 @@
             </ul>
         </nav>
 
-        <div class="box">
-            <a href="#">한국어</a>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+        <div class="select-lang-box">
+            <div class="select-lang flex flex-ai-c">
+                <a href="#">한국어</a>
+                <div class="select-lang-btn"></div>
+            </div>
+            <div class="menu-box-1">
+                <ul>
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">中文(简体)</a></li>
+                    <li><a href="#">中文(繁體)</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
+    <!--슬라이더바-->
     <div class="slider slider-1">
         <div class="slides">
             <div class="active"
@@ -75,5 +81,16 @@
             <div class="next"></div>
         </div>
     </div>
-
+    <!--컨텐츠-->
+    <div class="content">
+        <div class="section_about">
+            <h2>
+                "ABOUT"
+                <br>
+                "LINE FRIENDS"
+            </h2>
+            <p>"라인프렌즈는 2011년, 모바일 메신저 ‘라인’ 의 스티커 캐릭터로 탄생했습니다. 오리지널 캐릭터 ‘브라운앤프렌즈’ 에 이어 글로벌 인기 아티스트 방탄소년단과 함께 만든 ‘BT21’, 중국의 아이돌 스타 왕위엔과 협업한 ‘ROY6’ 등 새로운 캐릭터 IP들이 밀레니얼 세대의 큰 사랑을 받으며, 다양한 IP를 보유한 글로벌 크리에이티브 스튜디오로 도약하고 있습니다."</p>
+        </div>
+        
+    </div>
 </body>

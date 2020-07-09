@@ -333,7 +333,7 @@ label[for] {
 .con {
     max-width: 1280px;
 }
-
+/*상단바*/
 .top-bar {
     position: absolute;
     margin-top: 50px;
@@ -385,54 +385,70 @@ label[for] {
     opacity: 1.0;
 }
 
-.box {
+
+/*언어 메뉴바*/
+
+.select-lang-box {
     padding-right: 60px;
 }
 
-.box>a {
+.select-lang-box>.select-lang>a {
     color: white;
     white-space: nowrap;
     font-size: 12px;
-    font-family: Roboto;
 }
 
 
-
-
-
-/*
-.container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    background-color:black;
-}
-
-.container>.bn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: url(https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/linefriends/bn1.jpg) repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
+.select-lang-box>.select-lang>.select-lang-btn {
+    display: block;
+    width: 15px;
+    height: 9px;
+    margin-left: 5px;
+    background-image: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/ico_unfd.png?raw=true);
     background-position: center;
-
+    background-repeat: no-repeat;
+    font-size: 12px;
+    color: #fff;
 }
 
-.container>.bn-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg_dim.png) repeat;
-    z-index: 10;
+.select-lang-box>.select-lang.active>.select-lang-btn {
+    transform: scaleY(-1);
 }
-*/
 
+
+
+
+
+
+.select-lang-box > .menu-box-1 {
+    visibility:hidden;
+}
+.select-lang-box > .select-lang.active + .menu-box-1 {
+    visibility:visible;
+}
+.select-lang-box > .menu-box-1 {
+    position:absolute;
+    font-size: 12px;
+    top: 30px;
+    right:60px;
+    width:120px;
+    height:150px;
+    background-color: white;
+}
+.select-lang-box > .menu-box-1 > ul {
+    float:left;
+}
+.select-lang-box > .menu-box-1 > ul > li:first-child {
+    margin-top:20px;
+}
+.select-lang-box > .menu-box-1 > ul > li {
+    margin-bottom:8px;
+    margin-left:30px;
+}
+.select-lang-box > .menu-box-1 > ul > li:hover {
+    text-decoration:underline;
+    cursor:pointer;
+}
 
 
 /* 슬라이더 공통 */
@@ -449,13 +465,14 @@ label[for] {
 }
 
 .slider>.pages>div {
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 8px;
     background-color: rgba(255, 255, 255, 0.5);
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.2s;
     border-radius: 50%;
+    margin-right: 8px;
 }
 
 .slider>.pages>div:hover,
