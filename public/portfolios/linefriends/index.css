@@ -331,8 +331,9 @@ label[for] {
 
 /* 커스텀 */
 .con {
-    max-width: 1280px;
+    max-width: 1180px;
 }
+
 /*상단바*/
 .top-bar {
     position: absolute;
@@ -355,7 +356,7 @@ label[for] {
 }
 
 .top-bar>.menu-box-1>ul>li {
-    margin-right: 68px;
+    margin-right: 63px;
     font-family: Roboto;
 }
 
@@ -363,7 +364,6 @@ label[for] {
     color: white;
     white-space: nowrap;
     font-size: 12px;
-    letter-spacing: 1px;
     position: relative;
 }
 
@@ -415,40 +415,44 @@ label[for] {
     transform: scaleY(-1);
 }
 
+/*scale : 크기 늘리기  + 일 경우 자신의 바깥쪽으로 늘어나는식으로 커지고 - 일 경우 자신의 안쪽으로 커지다보니 반대모양으로 띄워보이는 현상*/
 
-
-
-
-
-.select-lang-box > .menu-box-1 {
-    visibility:hidden;
+.select-lang-box>.menu-box-1 {
+    visibility: hidden;
 }
-.select-lang-box > .select-lang.active + .menu-box-1 {
-    visibility:visible;
+
+.select-lang-box>.select-lang.active+.menu-box-1 {
+    visibility: visible;
 }
-.select-lang-box > .menu-box-1 {
-    position:absolute;
+
+.select-lang-box>.menu-box-1 {
+    position: absolute;
     font-size: 12px;
     top: 30px;
-    right:60px;
-    width:120px;
-    height:150px;
+    right: 60px;
+    width: 120px;
+    height: 150px;
     background-color: white;
 }
-.select-lang-box > .menu-box-1 > ul {
-    float:left;
+
+.select-lang-box>.menu-box-1>ul {
+    float: left;
 }
-.select-lang-box > .menu-box-1 > ul > li:first-child {
-    margin-top:20px;
+
+.select-lang-box>.menu-box-1>ul>li:first-child {
+    margin-top: 20px;
 }
-.select-lang-box > .menu-box-1 > ul > li {
-    margin-bottom:8px;
-    margin-left:30px;
+
+.select-lang-box>.menu-box-1>ul>li {
+    margin-bottom: 8px;
+    margin-left: 30px;
 }
-.select-lang-box > .menu-box-1 > ul > li:hover {
-    text-decoration:underline;
-    cursor:pointer;
+
+.select-lang-box>.menu-box-1>ul>li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 
 
 /* 슬라이더 공통 */
@@ -498,6 +502,9 @@ label[for] {
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .slider>.slides>div.active {
@@ -541,8 +548,28 @@ label[for] {
 
 .slider>.side-btns>.prev {
     background-position: 0 -230px;
+    margin-left: 60px;
 }
 
 .slider>.side-btns>.next {
     background-position: 0 -160px;
+    margin-right: 60px;
 }
+
+/*슬라이더 배너 글자*/
+
+.slider>.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.slider>.text>p {
+    font-size: 20px;
+    font-family: volteRegular;
+    color: #fff;
+    text-align: center;
+}
+
