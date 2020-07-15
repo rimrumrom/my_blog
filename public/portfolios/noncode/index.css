@@ -1,345 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
 html {
     /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
     font-family: "Roboto", "Noto Sans KR", sans-serif;
-  }
-  
-  /* 노말라이즈 */
-  body, ul, li, h1 {
-    margin:0;
-    padding:0;
-    list-style:none;
-  }
-  
-  a {
-    color:inherit;
-    text-decoration:none;
-  }
-  
-  label[for] {
-    cursor:pointer;
-    user-select:none;
-  }
-  
-  /* 라이브러리 */
-  .block {
-    display:block;
-  }
-  
-  .inline-block {
-    display:inline-block;
-  }
-  
-  .absolute-left {
-    position:absolute;
-    left:0;
-  }
-  
-  .absolute-right {
-    position:absolute;
-    right:0;
-  }
-  
-  .absolute-bottom {
-    position:absolute;
-    bottom:0;
-  }
-  
-  .absolute-top {
-    position:absolute;
-    top:0;
-  }
-  
-  .absolute-center {
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-  }
-  
-  .absolute-middle {
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-  }
-  
-  .absolute-middle.absolute-center {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(-50%) translateY(-50%);
-  }
-  
-  .relative {
-    position:relative;
-  }
-  
-  .cell {
-    float:left;
-    box-sizing:border-box;
-  }
-  
-  .cell-right {
-    float:right;
-    box-sizing:border-box;
-  }
-  
-  .row::after {
-    content:"";
-    display:block;
-    clear:both;
-  }
-  
-  .clear-both {
-    clear:both;
-  }
-  
-  .img-box > img {
-    width:100%;
-    display:block;
-  }
-  
-  .con {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  
-  .margin-0-auto {
-    margin-left:auto;
-    margin-right:auto;
-  }
-  
-  .text-align-center {
-    text-align:center;
-  }
-  
-  .text-align-right {
-    text-align:right;
-  }
-  
-  .line-height-0 {
-    line-height:0;
-  }
-  
-  .line-height-0 > * {
-    line-height:normal;
-  }
-  
-  .width-30px {
-    width:30px;
-  }
-  
-  .width-35px {
-    width:35px;
-  }
-  
-  .width-40px {
-    width:35px;
-  }
-  
-  .width-45px {
-    width:35px;
-  }
-  
-  .width-50px {
-    width:50px;
-  }
-  
-  .width-80px {
-    width:80px;
-  }
-  
-  .width-100px {
-    width:100px;
-  }
-  
-  .width-100p {
-    width:100%;
-  }
-  
-  .width-60p {
-    width:60%;
-  }
-  
-  .width-55p {
-    width:55%;
-  }
-  
-  .width-50p {
-    width:50%;
-  }
-  
-  .width-45p {
-    width:45%;
-  }
-  
-  .width-40p {
-    width:40%;
-  }
-  
-  .width-30p {
-    width:30%;
-  }
-  
-  .width-35p {
-    width:35%;
-  }
-  
-  .width-100p-except-30px {
-    width:calc(100% - 30px);
-  }
-  
-  .width-100p-except-35px {
-    width:calc(100% - 35px);
-  }
-  
-  .width-100p-except-40px {
-    width:calc(100% - 40px);
-  }
-  
-  .width-100p-except-50px {
-    width:calc(100% - 50px);
-  }
-  
-  .width-100p-except-80px {
-    width:calc(100% - 80px);
-  }
-  
-  .width-100p-except-100px {
-    width:calc(100% - 100px);
-  }
-  
-  .height-100p {
-    height:100%;
-  }
-  
-  .height-50p {
-    height:50%;
-  }
-  
-  .border-box {
-    box-sizing:border-box;
-  }
-  
-  .font-size-dot-8rem {
-    font-size:.8rem;
-  }
-  
-  .table-row {
-    display:table;
-  }
-  
-  .table-row.row::after {
-    display:inline;
-    clear:non;
-  }
-  
-  .table-row > .cell {
-    float:none;
-    display:table-cell;
-  }
-  
-  .border-red {
-    border:10px solid red;
-  }
-  
-  .border-green {
-    border:10px solid green;
-  }
-  
-  .border-blue {
-    border:10px solid blue;
-  }
-  
-  .border-gold {
-    border:10px solid gold;
-  }
-  
-  .border-pink {
-    border:10px solid pink;
-  }
-  
-  /* 라이브러리 - flex */
-  * > .flex {
-    display:flex;
-  }
-  
-  * > .flex-grow-1 {
-    flex-grow:1;
-  }
-  
-  * > .flex-jc-c {
-    justify-content:center;
-  }
-  
-  * > .flex-jc-s {
-    justify-content:flex-start;
-  }
-  
-  * > .flex-jc-e {
-    justify-content:flex-end;
-  }
-  
-  * > .flex-jc-sb {
-    justify-content:space-between;
-  }
-  
-  * > .flex-ai-c {
-    align-items:center;
-  }
-  
-  * > .flex-ai-s {
-    align-items:flex-start;
-  }
-  
-  * > .flex-ai-e {
-    align-items:flex-end;
-  }
-  
-  * > .flex-as-s {
-    align-self:stretch;
-  }
-  
-  * > .flex-as-c {
-    align-self:center;
-  }
-  
-  * > .flex-as-s {
-    align-self:flex-start;
-  }
-  
-  * > .flex-as-e {
-    align-self:flex-end;
-  }
-  
-  * > .flex-column-nowrap {
-    flex-flow:column nowrap;
-  }
-  
-  * > .flex-column-wrap {
-    flex-flow:column wrap;
-  }
-  
-  * > .flex-row-wrap {
-    flex-flow:row wrap;
-  }
-  
-  .flex-ch-basis-0 > * {
-    flex-basis:0;
-  }
-  
-  * > .flex-1-0-0 {
-    flex:1 0 0;
-  }
-  
-  /* 커스텀 */
-  .con-min-width {
-    min-width:1356px;
-  }
-  
-  .con {
-    width:1356px;
-  }
-div {
-    background-color: red;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+label[for] {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 라이브러리 */
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+    position: relative;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-0-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0 > * {
+    line-height: normal;
+}
+
+.width-30px {
+    width: 30px;
+}
+
+.width-35px {
+    width: 35px;
+}
+
+.width-40px {
+    width: 35px;
+}
+
+.width-45px {
+    width: 35px;
+}
+
+.width-50px {
+    width: 50px;
+}
+
+.width-80px {
+    width: 80px;
+}
+
+.width-100px {
     width: 100px;
-    height: 100px;
-}  
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-60p {
+    width: 60%;
+}
+
+.width-55p {
+    width: 55%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-45p {
+    width: 45%;
+}
+
+.width-40p {
+    width: 40%;
+}
+
+.width-30p {
+    width: 30%;
+}
+
+.width-35p {
+    width: 35%;
+}
+
+.width-100p-except-30px {
+    width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+    width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+    width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+    width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+    width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+    width: calc(100% - 100px);
+}
+
+.height-100p {
+    height: 100%;
+}
+
+.height-50p {
+    height: 50%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+    font-size: 0.8rem;
+}
+
+.table-row {
+    display: table;
+}
+
+.table-row.row::after {
+    display: inline;
+    clear: non;
+}
+
+.table-row > .cell {
+    float: none;
+    display: table-cell;
+}
+
+.border-red {
+    border: 10px solid red;
+}
+
+.border-green {
+    border: 10px solid green;
+}
+
+.border-blue {
+    border: 10px solid blue;
+}
+
+.border-gold {
+    border: 10px solid gold;
+}
+
+.border-pink {
+    border: 10px solid pink;
+}
+
+/* 라이브러리 - flex */
+* > .flex {
+    display: flex;
+}
+
+* > .flex-grow-1 {
+    flex-grow: 1;
+}
+
+* > .flex-jc-c {
+    justify-content: center;
+}
+
+* > .flex-jc-s {
+    justify-content: flex-start;
+}
+
+* > .flex-jc-e {
+    justify-content: flex-end;
+}
+
+* > .flex-jc-sb {
+    justify-content: space-between;
+}
+
+* > .flex-ai-c {
+    align-items: center;
+}
+
+* > .flex-ai-s {
+    align-items: flex-start;
+}
+
+* > .flex-ai-e {
+    align-items: flex-end;
+}
+
+* > .flex-as-s {
+    align-self: stretch;
+}
+
+* > .flex-as-c {
+    align-self: center;
+}
+
+* > .flex-as-s {
+    align-self: flex-start;
+}
+
+* > .flex-as-e {
+    align-self: flex-end;
+}
+
+* > .flex-column-nowrap {
+    flex-flow: column nowrap;
+}
+
+* > .flex-row-wrap {
+    flex-flow: row wrap;
+}
+
+* > .flex-column-wrap {
+    flex-flow: column wrap;
+}
+
+.flex-ch-basis-0 > * {
+    flex-basis: 0;
+}
+
+* > .flex-1-0-0 {
+    flex: 1 0 0;
+}
+
+/* 커스텀 */
+
+/*탑바 시작*/
+
+.top-bar {
+    height: 40px;
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    z-index: 2;
+}
+.top-bar > .menu-box-1 > ul > li {
+    margin-left: 22px;
+}
+
+/*카트 png 자간 벌리기*/
+
+.top-bar > .menu-box-1 > ul > li.li-cart > a > span:first-child {
+    margin-right: 5px;
+}
+
+.top-bar > .menu-box-1 > ul > li:last-child {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.top-bar > .menu-box-1 span {
+    font-weight: 700;
+    font-size: 15px;
+}
+.top-bar > .menu-box-1 > ul > li > a:hover > span {
+    color: #727272;
+    transition-duration: 0.2s;
+}
+.top-bar > .menu-box-1 > ul > li > a > span > img {
+    width: 23px;
+}
+/*탑바 끝*/
+
+/*좌측 사이드바 시작*/
+
+.left-side-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.left-side-bar > .side-bar-wrap {
+    margin-left: 70px;
+}
+.left-side-bar > .side-bar-wrap > .logo {
+    margin-top: 70px;
+}
+.left-side-bar > .side-bar-wrap > .logo:hover > a > img {
+    opacity: 0.6;
+}
+.left-side-bar > .side-bar-wrap > .leftinner {
+    margin-top: 62px;
+}
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > .menulist
+    > ul
+    > li:not(:first-child) {
+    padding-top: 10px;
+}
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > a > span {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 12px;
+}
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > nav
+    > ul
+    > li:last-child
+    > a
+    > span {
+    font-weight: 500;
+}
+
+/*좌측 사이드바 마우스 올리면 글자 언더라인 생성*/
+
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > a {
+    position: relative;
+}
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    height: 1px;
+    transition: width 0.3s;
+}
+
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li:hover > a::after {
+    width: 100%;
+    background-color: black;
+}
+
+/* TOP 서브메뉴 */
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul li {
+    position: relative;
+}
+
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul ul {
+    display: none;
+    position: absolute;
+    left: 65%;
+    top: 0;
+    width: 300px;
+    z-index: 10; /* 유령 중 가장 위에 올려야함 안그러면 이상한 곳에서 hover 가 풀림 */
+}
+
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li:hover > ul {
+    display: block;
+}
+
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > nav
+    > ul
+    > li
+    > ul
+    > li
+    > a
+    > span {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > ul > li {
+    transition: padding 0.6s;
+}
+.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > ul > li:hover {
+    padding-left: 10px;
+}
+
+/*좌측 사이드바 끝*/
+
+/*상품리스트 시작*/
+.main-box {
+    margin-left: 300px;
+    margin-right: 70px;
+    min-width: 750px;
+    margin-top: 180px;
+}
+
+.main-box .prod-list-box-1 {
+    overflow: hidden;
+    margin-top: 30px;
+}
+/*밑에 음수마진을 줬으면 넘친(가려진) 컨텐츠는 잘려지고 보여지지 않게 하기 위해 overflow:hidden;을 해야한다*/
+
+.main-box .prod-list-box-1 > h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.main-box .prod-list-box-1 > ul {
+    margin: 0 -10px;
+    margin-top: 20px;
+}
+/*아래 li에 padding:0 10px;으로 인해 이미지가 안쪽으로 줄어든 만큼 여백이 생기므로 ul한테 음수마진을 주어 여백을 가린다(하지만 가린거지 실제 존재함)*/
+
+.main-box .prod-list-box-1 > ul > li {
+    width: 33.3333%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+/*width:33.3333%; -> 화면에 이미지 3장만 나오게 하기 위해
+padding:0 10px; -> 이미지 사이 간격
+box-sizing:border-box; -> 간격주면 넘침 그래서 넘치지말라고 지정*/
+
+/*상품리스트 끝*/
+
+/*상품리스트 텍스트박스 시작*/
+.main-box .prod-list-box-1 > ul > li > a {
+    position: relative;
+}
+
+.main-box .prod-list-box-1 > ul > li > a > .txt-box {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+    padding-left: 10px;
+    visibility: hidden;
+}
+/*background-color:rgba(255,255,255,0.5); 와visibility:hidden; 을 이용해 마우스 올리면 보이게 하는 것과 배경색으로 불투명도 주기!! 절대 opcity로 조정하는게 아님!!*/
+
+.main-box .prod-list-box-1 > ul > li:hover > a > .txt-box {
+    visibility: visible;
+}
+
+.main-box .prod-list-box-1 > ul > li > a > .txt-box > *:not(:first-child) {
+    margin-top: 10px;
+}
+/*글자 사이 띄우기*/
+
+.main-box .prod-list-box-1 > ul > li > a > .txt-box > .prod-price::before {
+    content: "₩";
+}
+
+.main-box .prod-list-box-1 .active-on-visible {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s;
+}
+/* transform(변형):translateY(100px); -> 내려가기
+transition: opacity 1s, transform 1s -> 속도 조절*/
+
+.main-box .prod-list-box-1 .active-on-visible.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* transform:translateY(0); -> 올라가기
+올라가지면서 opacity:1; 로 인해 보이기 시작
+.active-on-visible -> active된다 언제? 보여질때!! 보여지지않으면 active 되지 않는다!! 추가로 .active-on-visible 가 active 될때 실행되게 하기 위해서는 자바 사용 (.자바 참고)*/
+
+ 
+.main-box > div:nth-child(2) > h1 {
+    margin-top: 80px;
+}
+
+
+
+
+/*상품리스트 텍스트박스 끝*/
