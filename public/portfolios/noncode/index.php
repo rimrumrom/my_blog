@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
 <div class="top-bar">
     <nav class="menu-box-1 height-100p">
         <ul class="flex height-100p">
@@ -63,6 +62,23 @@
                     <li><a href="#"><span>BAG</span></a></li>
                     <li><a href="#"><span>SALE</span></a></li>
                     <li><a href="#"><span>당일출고(~3시)</span></a></li>
+                </ul>
+            </nav>
+            <nav class="notice">
+                <ul>
+                    <li><a href="#"><span>NOTICE</span></a></li>
+                    <li><a href="#"><span>Q&A</span></a></li>
+                    <li><a href="#"><span>REVIEW</span></a></li>
+                    <li><a href="#"><span>EVENT</span></a></li>
+                </ul>
+            </nav>
+            <nav class="instagram">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/in.png?raw=true" alt=""></span> 
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -161,91 +177,82 @@
         <ul class="flex flex-row-wrap">
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/1.jpg?raw=true" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">리너 포켓 숏 데님 팬츠</div>
+                        <div class="prod-price">35,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/2.jpg?raw=true" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">샌드 레이어드 크롭 니트</div>
+                        <div class="prod-price">26,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/noncode/1.webp" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">코넛 백 리본 원피스</div>
+                        <div class="prod-price">46,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/3.jpg?raw=true" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">드퍼스 컷팅 데님 팬츠</div>
+                        <div class="prod-price">29,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/4.jpg?raw=true" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">로즈 프린팅 오버 티셔츠</div>
+                        <div class="prod-price">26,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/noncode/01a686259ec1ef187a0ee87ddd0246a5.webp" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">스모크 반팔 블라우스 (화이트 당일출고)</div>
+                        <div class="prod-price">16,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/noncode/c7c811eaaf787ff094b3eb3972662a8f.webp" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">슈가 플레어 스커트</div>
+                        <div class="prod-price">31,000</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://github.com/rimrumrom/img1/blob/master/portfolios/noncode/61a8ebf8c01d55f1fe43bc90a20a008d.gif?raw=true" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">어글리 아웃솔 워커</div>
+                        <div class="prod-price">57,800</div>
                     </div>
                 </a>
             </li>
             <li class="active-on-visible">
                 <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
+                    <span class="img-box"><img src="https://raw.githubusercontent.com/rimrumrom/img1/master/portfolios/noncode/663948bb4c04baff731d6fc8a8c0f610.webp" alt=""></span>
                     <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
-                    </div>
-                </a>
-            </li>
-            <li class="active-on-visible">
-                <a href="" class="block">
-                    <span class="img-box"><img src="https://noncode.co.kr/web/product/medium/202007/35adba6d47c8d4605449d78d767cacd5.webp" alt=""></span>
-                    <div class="txt-box">
-                        <div class="prod-name">위튼 셔링 크롭 니트</div>
-                        <div class="prod-price">32,000</div>
+                        <div class="prod-name">소이 후리아 투피스 set (블랙 제작중)</div>
+                        <div class="prod-price">27,000</div>
                     </div>
                 </a>
             </li>

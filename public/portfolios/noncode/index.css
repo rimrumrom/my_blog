@@ -397,6 +397,9 @@ label[for] {
 .left-side-bar > .side-bar-wrap > .leftinner {
     margin-top: 62px;
 }
+.left-side-bar > .side-bar-wrap > .leftinner > .notice {
+    margin-top: 40px;
+}
 .left-side-bar
     > .side-bar-wrap
     > .leftinner
@@ -405,7 +408,14 @@ label[for] {
     > li:not(:first-child) {
     padding-top: 10px;
 }
-.left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > a > span {
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > .menulist
+    > ul
+    > li
+    > a
+    > span {
     font-weight: 900;
     font-size: 20px;
     line-height: 12px;
@@ -413,14 +423,43 @@ label[for] {
 .left-side-bar
     > .side-bar-wrap
     > .leftinner
-    > nav
+    > .menulist
     > ul
     > li:last-child
     > a
     > span {
     font-weight: 500;
 }
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > .notice
+    > ul
+    > li
+    > a
+    > span {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
 
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > .instagram {
+    margin-top:20px;
+}
+.left-side-bar
+    > .side-bar-wrap
+    > .leftinner
+    > .instagram
+    > ul
+    > li
+    > a
+    > span
+    > img {
+    width:15px;
+}
 /*좌측 사이드바 마우스 올리면 글자 언더라인 생성*/
 
 .left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > a {
@@ -567,12 +606,8 @@ transition: opacity 1s, transform 1s -> 속도 조절*/
 올라가지면서 opacity:1; 로 인해 보이기 시작
 .active-on-visible -> active된다 언제? 보여질때!! 보여지지않으면 active 되지 않는다!! 추가로 .active-on-visible 가 active 될때 실행되게 하기 위해서는 자바 사용 (.자바 참고)*/
 
- 
 .main-box > div:nth-child(2) > h1 {
     margin-top: 80px;
 }
-
-
-
 
 /*상품리스트 텍스트박스 끝*/
