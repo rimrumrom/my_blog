@@ -267,6 +267,9 @@ label[for] {
 * > .flex {
     display: flex;
 }
+* > .inline-flex {
+    display: inline-flex;
+}
 
 * > .flex-grow-1 {
     flex-grow: 1;
@@ -408,14 +411,7 @@ label[for] {
     > li:not(:first-child) {
     padding-top: 10px;
 }
-.left-side-bar
-    > .side-bar-wrap
-    > .leftinner
-    > .menulist
-    > ul
-    > li
-    > a
-    > span {
+.left-side-bar > .side-bar-wrap > .leftinner > .menulist > ul > li > a > span {
     font-weight: 900;
     font-size: 20px;
     line-height: 12px;
@@ -430,24 +426,14 @@ label[for] {
     > span {
     font-weight: 500;
 }
-.left-side-bar
-    > .side-bar-wrap
-    > .leftinner
-    > .notice
-    > ul
-    > li
-    > a
-    > span {
+.left-side-bar > .side-bar-wrap > .leftinner > .notice > ul > li > a > span {
     font-weight: 900;
     font-size: 16px;
     line-height: 24px;
 }
 
-.left-side-bar
-    > .side-bar-wrap
-    > .leftinner
-    > .instagram {
-    margin-top:20px;
+.left-side-bar > .side-bar-wrap > .leftinner > .instagram {
+    margin-top: 20px;
 }
 .left-side-bar
     > .side-bar-wrap
@@ -458,7 +444,7 @@ label[for] {
     > a
     > span
     > img {
-    width:15px;
+    width: 15px;
 }
 /*좌측 사이드바 마우스 올리면 글자 언더라인 생성*/
 
@@ -518,6 +504,29 @@ label[for] {
 }
 .left-side-bar > .side-bar-wrap > .leftinner > nav > ul > li > ul > li:hover {
     padding-left: 10px;
+}
+/* 검색창*/
+.left-side-bar > .side-bar-wrap > .leftinner > .search-bar > input {
+    width: 100px;
+    outline: 0;
+    border: 0;
+    margin-right: 2px;
+    padding: 10px;
+}
+
+.left-side-bar > .side-bar-wrap > .leftinner > .search-bar {
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* 버튼에 이미지 넣는 방법*/
+.left-side-bar > .side-bar-wrap > .leftinner > .search-bar > button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 /*좌측 사이드바 끝*/
@@ -611,3 +620,75 @@ transition: opacity 1s, transform 1s -> 속도 조절*/
 }
 
 /*상품리스트 텍스트박스 끝*/
+
+/*하단 시작*/
+.main-box > .footer-box-1 {
+    border-top: 1px solid #dfdfdf;
+    margin: 0 15px;
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
+.main-box > .footer-box-1 > .inner {
+    padding-bottom: 70px;
+    margin: 0 50px;
+}
+.main-box > .footer-box-1 > .inner {
+    margin-top: 80px;
+    font-family: "Roboto", "Nanum Gothic", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+}
+.main-box > .footer-box-1 > .inner > .logo {
+    width: 18%;
+}
+.main-box > .footer-box-1 > .inner > .logo > a > img {
+    height: 18px;
+}
+.main-box > .footer-box-1 > .inner > .cscenter {
+    width: 22%;
+}
+.main-box > .footer-box-1 > .inner > .cscenter > .bank {
+    margin-top: 30px;
+}
+.main-box > .footer-box-1 > .inner > .wrap {
+    width: 55%;
+}
+.main-box > .footer-box-1 > .inner > .wrap > .link {
+    flex: 1 0 0;
+    max-width: 250px;
+    white-space:nowrap;
+}
+/* link랑 company 사이가 딱 붙어있는 것을 해결하기위해서 **flex: 1 0 0 -> 자신이 먹을 부분을 다 먹고도 나머지 부분을 1만큼 먹는다!! but 지금은 형제인 company이 자신이 먹을 부분을 다 먹고 나머지는 따로 먹지 않겠다. 그러므로 link가 나머지를 다 먹는다 */
+
+/* 하지만 link가 나머지를 다 먹게되면 또 link랑 company 사이가 너무 멀어지게 된다. 해결하기위해 **max-width: 250px 을 정해줌으로써 먹을 수 있는 범위를 정해준다!! */
+
+/* white-space:nowrap -> 글자 깨짐을 방지해줌 글자 길이를 지킬 수 있다!! */
+
+.main-box > .footer-box-1 {
+    position:relative;
+}
+.main-box > .footer-box-1 > .joinbt {
+    position:absolute;
+    top:80px;
+    right:50px;
+    border:1px solid black;
+    padding: 12px 0;
+    width: 120px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+.main-box > .footer-box-1 > .joinbt:hover {
+    background-color: black;
+    color:white;
+}
+.main-box > .footer-box-1 > .bottom {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0 50px;
+}
+/* 하단 끝 */
