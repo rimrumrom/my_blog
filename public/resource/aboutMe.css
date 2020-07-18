@@ -102,11 +102,70 @@
     margin-top:60px;
 }
 .hobby>.gallery>div>div {
-    width:25%;
-    padding:20px;
+    width: calc(25% - 40px);
+    margin:20px;
+    cursor: pointer;
     box-sizing: border-box;
 }
 .gallery>div>div>img {
     display: block;
 }
 /*취미끝*/
+
+/*팝업창*/
+html.no-scroll, html.no-scroll body {
+    overflow-y:hidden;
+}
+
+.popup-box{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+}
+
+html.no-scroll .popup-box {
+    visibility: visible;
+}
+
+
+
+.popup-box> .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    transition: background-color 0.5s;
+}
+.popup-box> .popup > img{
+    display:block;
+    width: 100%;
+}
+.popup-box> .popup > .side-btns > i{
+    position: absolute;
+    top: 50%;
+    font-size: 5rem;
+    color: white;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+.popup-box> .popup > .side-btns > i:first-child{
+    left: -50px;
+}
+.popup-box> .popup > .side-btns > i:last-child{
+    right: -50px;
+}
+.popup-box> .popup > .btn-close {
+    position:absolute;
+    top: -65px;
+    right: -65px;
+    font-size: 3rem;
+    color: white;
+    cursor:pointer;
+}

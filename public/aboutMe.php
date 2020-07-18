@@ -3,8 +3,28 @@ include "../part/head_head.php";
 ?>
 <!--링크 거는 구간-->
 <link rel="stylesheet" href="/resource/aboutMe.css">
+<script src="/resource/aboutMe.js"></script>
 <?php
 include "../part/head.php";
+
+$dbConn = mysqli_connect('site18.blog.oa.gg','site18','sbs123414','site18',3306)or die ("DB CONNECT ERROR");
+
+mysqli_query($dbConn, "SET NAMES utf8mb4");
+
+$sql ="
+SELECT *
+FROM gallery
+ORDER BY ID DESC
+LIMIT 8
+";
+
+$rs = mysqli_query($dbConn , $sql);
+$galleryImgs = [];
+
+while ( $galleryImg = mysqli_fetch_assoc($rs) ) {
+    $galleryImgs[] = $galleryImg;
+}
+
 ?>
 
 <!--어바웃미 메인 배너-->
@@ -33,14 +53,9 @@ include "../part/head.php";
     <div class="line line-2 flex flex-ai-c flex-jc-c"></div>
     <div class="gallery">
         <div class="flex flex-wrap">
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/1.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/2.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/3.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/4.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/5.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/6.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/7.jpg?raw=true" alt=""></div>
-            <div class="img-box"><img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/8.jpg?raw=true" alt=""></div>
+            <?php foreach( $galleryImgs as $img ) { ?>
+            <div class="img-box"><img src="<?=$img['imageUrl']?>" alt=""></div>
+            <?php } ?>
         </div>
     </div>
 </div>
@@ -50,7 +65,21 @@ include "../part/head.php";
 </div>
 
 
-<p>동해물과 <span style="color:blue; font-weight:bold">백두산이 </span>마르고 닳도록 <span style="color:red;font-style:italic">하나님이 보우하사</span> 우리나라 만세<br>
+<div class="popup-box">
+    <div class="popup">
+        <img src="https://github.com/rimrumrom/img1/blob/4e43e3e0a42da51f2ed499b55f9682fe32fea25e/blog/article/2020/1.jpg?raw=true" alt="">
+        <div class="btn btn-close">
+            <i class="far fa-times-circle"></i>
+        </div>
+        <div class="side-btns">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+
+
+
 <?php
 include "../part/foot.php";
 ?>
