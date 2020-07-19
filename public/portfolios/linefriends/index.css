@@ -573,3 +573,38 @@ label[for] {
     text-align: center;
 }
 
+/* 어바웃미 시작*/
+.section_about {
+    position: relative;
+    padding: 110px 0 160px;
+    text-align: center;
+}
+
+.section_about h2 {
+    font-family: volteSemiBold;
+    font-size: 80px;
+    color: #404040;
+    margin-bottom: 24px;
+}
+.section_about p {
+    font-family: NanumBarunGothic;
+    font-size: 13px;
+    color: #333;
+    line-height: 24px;
+    width: 700px;
+    margin: 0 auto;
+}
+.section_about > .img-box {
+    width: 820px;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.section_about > .img-box > a{
+    display:block;
+}
+.section_about > .img-box > a > img {
+    display:block;
+    width: 100%;
+}
+/* 팝업 시작 */

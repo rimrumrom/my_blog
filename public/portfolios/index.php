@@ -18,11 +18,16 @@
                     <li><a href="https://www.linefriends.com/">라인프렌즈 원본</a></li>
                 </ul>
             </li>
-            <ul>
-                <li><a href="/portfolios/noncode">논코드</a>
-                <li><a href="https://noncode.co.kr/">논코드 원본</a></li>
-                </li>
-            </ul>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="/portfolios/noncode">논코드</a>
+                <ul>
+                    <li><a href="https://noncode.co.kr/">논코드 원본</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <h1>디자인 작업물</h1>

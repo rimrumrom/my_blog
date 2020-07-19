@@ -82,7 +82,8 @@
 
         <div class="text">
             <p>Global Creative Studio</p>
-            <img src="https://raw.githubusercontent.com/rimrumrom/img1/ee18effa90c1070a1586164de10df4feeb6e731b/portfolios/linefriends/img_c_logo.png" alt="">
+            <img src="https://raw.githubusercontent.com/rimrumrom/img1/ee18effa90c1070a1586164de10df4feeb6e731b/portfolios/linefriends/img_c_logo.png"
+                alt="">
         </div>
     </div>
 
@@ -90,14 +91,18 @@
     <div class="content">
         <div class="section_about">
             <h2>
-                "ABOUT"
+                ABOUT
                 <br>
-                "LINE FRIENDS"
+                LINE FRIENDS
             </h2>
             <p>"라인프렌즈는 2011년, 모바일 메신저 ‘라인’ 의 스티커 캐릭터로 탄생했습니다. 오리지널 캐릭터 ‘브라운앤프렌즈’ 에 이어 글로벌 인기 아티스트 방탄소년단과 함께 만든 ‘BT21’,
                 중국의 아이돌 스타 왕위엔과 협업한 ‘ROY6’ 등 새로운 캐릭터 IP들이 밀레니얼 세대의 큰 사랑을 받으며, 다양한 IP를 보유한 글로벌 크리에이티브 스튜디오로 도약하고 있습니다."
             </p>
+            <div class="img-box">
+                <a href="#">
+                    <img src="https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/img_about_thumb.jpg?raw=true" alt="">
+                </a>
+            </div>
         </div>
-
     </div>
 </body>
