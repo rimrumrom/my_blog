@@ -82,7 +82,7 @@
 
         <div class="text">
             <p>Global Creative Studio</p>
-            <img src="https://raw.githubusercontent.com/rimrumrom/img1/ee18effa90c1070a1586164de10df4feeb6e731b/portfolios/linefriends/img_c_logo.png"
+            <img src="https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/img_c_logo.png?raw=true"
                 alt="">
         </div>
     </div>

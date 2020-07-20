@@ -13,7 +13,7 @@
     <nav>
         <ul>
             <li>
-                <a href="/portfolios/linefriends">라인프렌즈</a>
+                <a href="/portfolios/linefriends/">라인프렌즈</a>
                 <ul>
                     <li><a href="https://www.linefriends.com/">라인프렌즈 원본</a></li>
                 </ul>
