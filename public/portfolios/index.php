@@ -22,9 +22,18 @@
     </nav>
     <nav>
         <ul>
-            <li><a href="/portfolios/noncode">논코드</a>
+            <li><a href="/portfolios/noncode/">논코드</a>
                 <ul>
                     <li><a href="https://noncode.co.kr/">논코드 원본</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="/portfolios/laka/">라카</a>
+                <ul>
+                    <li><a href="https://en.laka.co.kr/">라카 원본</a></li>
                 </ul>
             </li>
         </ul>
@@ -38,6 +47,17 @@
                 <ul>
                     <li>창작여부: 모작</li>
                     <li>출처: 망고보그 <a href="https://www.mangoboard.net/edit/5250468"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://rimrumrom.github.io/img1/portfolios/artworks/1/2.png">아트워크1</a>
+                <ul>
+                    <li>창작여부: 모작</li>
+                    <li>출처: 라인프렌즈</li>
                 </ul>
             </li>
         </ul>
