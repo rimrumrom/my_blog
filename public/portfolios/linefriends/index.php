@@ -99,10 +99,80 @@
                 중국의 아이돌 스타 왕위엔과 협업한 ‘ROY6’ 등 새로운 캐릭터 IP들이 밀레니얼 세대의 큰 사랑을 받으며, 다양한 IP를 보유한 글로벌 크리에이티브 스튜디오로 도약하고 있습니다."
             </p>
             <div class="img-box">
-                <a href="#">
-                    <img src="https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/img_about_thumb.jpg?raw=true" alt="">
+                <a>
+                    <img src="https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/img_about_thumb.jpg?raw=true"
+                        alt="">
                 </a>
             </div>
+            <div class="youtube-popup-bg">
+                <div class="btn-close"></div>
+            </div>
+            <div class="youtube-popup">
+                <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--이미지슬라이더2-->
+    <div class="slider-x slider-x-1">
+        <div class="slides">
+            <div data-slider-x-img-type-1="뉴욕타임스퀘어"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/5e9e58d2a43c40a599b8918bd72c9df5.jpg">
+            </div>
+            <div data-slider-x-img-type-1="뉴욕타임스퀘어"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/358880900eb04b75a2f854666f0bc2a8.jpg">
+            </div>
+            <div data-slider-x-img-type-1="뉴욕타임스퀘어"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/5063a11e33b543ceaf0749cd0c644ac6.jpg">
+            </div>
+            <div data-slider-x-img-type-1="뉴욕타임스퀘어"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/67b21996a3344742a5662171cd7677b8.jpg">
+            </div>
+            <div data-slider-x-img-type-1="뉴욕타임스퀘어"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/90278d132a464ce2aa2326c23c379790.jpg">
+            </div>
+            <div data-slider-x-img-type-1="LA할리우드"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/5d5a2304f96f4e25a92b660e6e5c9aec.jpg">
+            </div>
+            <div data-slider-x-img-type-1="LA할리우드"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/5370159d45a54ad6bb9051449b7906e9.jpg">
+            </div>
+            <div data-slider-x-img-type-1="LA할리우드"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/8f91f100acfe4d6eacec67ce43022063.jpg">
+            </div>
+            <div data-slider-x-img-type-1="LA할리우드"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/7c81dce4b6714f0e8f5a2e42205a7f2a.jpg">
+            </div>
+            <div data-slider-x-img-type-1="LA할리우드"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/3d1ef121f4f44514ab65c7840480f497.jpg">
+            </div>
+            <div data-slider-x-img-type-1="상해신천지"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/1fa25ad4d21c43dbb600fb2005174f7d.jpg">
+            </div>
+            <div data-slider-x-img-type-1="상해신천지"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/b025451ab5b44afb9ef69424633f0d28.jpg">
+            </div>
+            <div data-slider-x-img-type-1="상해신천지"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/0f7091cb256146a78c93bc3511953e79.jpg">
+            </div>
+            <div data-slider-x-img-type-1="상해신천지"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/b29b64c51d63420c9cb428463bd478b2.jpg">
+            </div>
+            <div data-slider-x-img-type-1="상해신천지"
+                data-slider-x-img-url="https://www.linefriends.com/content/photo/201901/2893a93c9b884928aadbfb2d9b15cd9c.jpg">
+            </div>
+        </div>
+        <div class="side-btns">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+        <div class="page-box flex flex-jc-c">
+            <button class="prev"></button>
+            <div class="pages flex flex-jc-c">
+
+            </div>
+            <button class="next"></button>
         </div>
     </div>
 </body>

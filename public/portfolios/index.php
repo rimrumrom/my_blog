@@ -54,7 +54,7 @@
     <nav>
         <ul>
             <li>
-                <a href="https://rimrumrom.github.io/img1/portfolios/artworks/1/2.png">아트워크1</a>
+                <a href="https://rimrumrom.github.io/img1/portfolios/artworks/1/2.png">아트워크2</a>
                 <ul>
                     <li>창작여부: 모작</li>
                     <li>출처: 라인프렌즈</li>
