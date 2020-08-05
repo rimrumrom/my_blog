@@ -1,0 +1,849 @@
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+label[for] {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 라이브러리 */
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+    position: relative;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-0-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0 > * {
+    line-height: normal;
+}
+
+.width-30px {
+    width: 30px;
+}
+
+.width-35px {
+    width: 35px;
+}
+
+.width-40px {
+    width: 35px;
+}
+
+.width-45px {
+    width: 35px;
+}
+
+.width-50px {
+    width: 50px;
+}
+
+.width-80px {
+    width: 80px;
+}
+
+.width-100px {
+    width: 100px;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-60p {
+    width: 60%;
+}
+
+.width-55p {
+    width: 55%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-45p {
+    width: 45%;
+}
+
+.width-40p {
+    width: 40%;
+}
+
+.width-30p {
+    width: 30%;
+}
+
+.width-35p {
+    width: 35%;
+}
+
+.width-100p-except-30px {
+    width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+    width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+    width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+    width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+    width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+    width: calc(100% - 100px);
+}
+
+.height-100p {
+    height: 100%;
+}
+
+.height-50p {
+    height: 50%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+    font-size: 0.8rem;
+}
+
+.table-row {
+    display: table;
+}
+
+.table-row.row::after {
+    display: inline;
+    clear: non;
+}
+
+.table-row > .cell {
+    float: none;
+    display: table-cell;
+}
+
+.border-red {
+    border: 10px solid red;
+}
+
+.border-green {
+    border: 10px solid green;
+}
+
+.border-blue {
+    border: 10px solid blue;
+}
+
+.border-gold {
+    border: 10px solid gold;
+}
+
+.border-pink {
+    border: 10px solid pink;
+}
+
+/* 라이브러리 - flex */
+* > .flex {
+    display: flex;
+}
+
+* > .flex-grow-1 {
+    flex-grow: 1;
+}
+
+* > .flex-jc-c {
+    justify-content: center;
+}
+
+* > .flex-jc-s {
+    justify-content: flex-start;
+}
+
+* > .flex-jc-e {
+    justify-content: flex-end;
+}
+
+* > .flex-jc-sb {
+    justify-content: space-between;
+}
+
+* > .flex-ai-c {
+    align-items: center;
+}
+
+* > .flex-ai-s {
+    align-items: flex-start;
+}
+
+* > .flex-ai-e {
+    align-items: flex-end;
+}
+
+* > .flex-as-s {
+    align-self: stretch;
+}
+
+* > .flex-as-c {
+    align-self: center;
+}
+
+* > .flex-as-s {
+    align-self: flex-start;
+}
+
+* > .flex-as-e {
+    align-self: flex-end;
+}
+
+* > .flex-column-nowrap {
+    flex-flow: column nowrap;
+}
+
+* > .flex-column-wrap {
+    flex-flow: column wrap;
+}
+
+* > .flex-row-wrap {
+    flex-flow: row wrap;
+}
+
+.flex-ch-basis-0 > * {
+    flex-basis: 0;
+}
+
+* > .flex-1-0-0 {
+    flex: 1 0 0;
+}
+
+/* 커스텀 */
+
+/* 고정형 .con 시작 */
+.con-min-width {
+    min-width: 1370px;
+}
+
+.con {
+    width: 1370px;
+}
+/* 고정형 .con 끝 */
+
+/* 반응형 타입 1 .con 시작 */
+/*
+.con {
+  max-width:1370px;
+}
+*/
+/* 반응형 타입 1 .con 끝 */
+
+/* 반응형 타입 2(넓을때만 반응형) .con 시작 */
+/*
+.con-min-width {
+  min-width:1370px;
+}
+
+.con {
+  margin-left:50px;
+  margin-right:50px;
+}
+*/
+/* 반응형 타입 2(넓을때만 반응형) .con 끝 */
+
+/*커스텁*/
+
+/*상단바*/
+body {
+    height: 10000px;
+}
+
+.wrap .header {
+    position: fixed; /* absolute 하면 안따라온다 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    z-index: 10;
+    font-weight: 900;
+    font-size: 12px;
+    padding: 0 18px;
+}
+.wrap .header .menu-box-1 {
+    margin-left: 15px;
+}
+.header:hover {
+    background-color: white;
+}
+.header.follow {
+    background-color: white;
+}
+/* follow가 되면 > fixed(스크롤) 가 되어 따라온다 */
+
+.wrap .header .menu-box-1 > ul > li {
+    margin: 0 12px;
+}
+.wrap .header ul > li > a {
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+/* 한글에는 적용안하면 화면이 작아질대 글자가 블록화 된다 */
+
+.wrap .header ul > li > a,
+input {
+    margin-bottom: -18px;
+}
+.wrap > .header > .my-list {
+    margin-left: auto;
+    margin-right: 25px;
+}
+.wrap .header .my-list ul > li {
+    margin-right: 15px;
+}
+/* 버튼에 이미지 넣는 방법*/
+.wrap .header .my-list ul > li > button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
+/* 검색창 */
+.wrap .header .my-list ul > li > input {
+    background: none;
+    width: 0;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    border-bottom: 2px solid #222;
+    cursor: text;
+    transition: width 0.1s ease;
+}
+.wrap .header .my-list ul > li:hover > input {
+    width: 120px;
+}
+.main-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrap .header .my-list ul > li:nth-child(4) > a {
+    position: relative;
+    display: block;
+}
+.wrap .header .my-list ul > li:nth-child(4) > a > span {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 0;
+    font-size: 10px;
+    color: #bf2928;
+}
+.wrap .header .my-list ul > li:nth-child(5) > a {
+    position: relative;
+    display: block;
+}
+.wrap .header .my-list ul > li:nth-child(5) > a > span {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 10px;
+    font-size: 10px;
+    color: #bf2928;
+}
+
+/*커스텁*/
+
+.wrap .header {
+    position: fixed; /* absolute 하면 안따라온다 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 74px;
+    z-index: 10;
+    font-weight: 900;
+    font-size: 12px;
+    padding: 0 18px;
+}
+.wrap .header .menu-box-1 {
+    margin-left: 15px;
+}
+.header:hover {
+    background-color: white;
+}
+.header.follow {
+    background-color: white;
+}
+/* follow가 되면 > fixed(스크롤) 가 되어 따라온다 */
+
+.wrap .header .menu-box-1 > ul > li {
+    margin: 0 12px;
+}
+.wrap .header .menu-box-1 > ul > li:nth-child(3) > a {
+    color: rgba(0, 156, 255);
+}
+.wrap .header .menu-box-1 > ul > li:last-child > a {
+    color: rgba(207,17,17);
+}
+.wrap .header ul > li > a {
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+/* 한글에는 적용안하면 화면이 작아질대 글자가 블록화 된다 */
+
+.wrap .header ul > li > a,
+input {
+    margin-bottom: -18px;
+}
+.wrap > .header > .my-list {
+    margin-left: auto;
+    margin-right: 25px;
+}
+.wrap .header .my-list ul > li {
+    margin-right: 15px;
+}
+/* 버튼에 이미지 넣는 방법*/
+.wrap .header .my-list ul > li > button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
+/* 검색창 */
+.wrap .header .my-list ul > li > input {
+    background: none;
+    width: 0;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    border-bottom: 2px solid #222;
+    cursor: text;
+    transition: width 0.1s ease;
+}
+.wrap .header .my-list ul > li:hover > input {
+    width: 120px;
+}
+.main-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrap .header .my-list ul > li:nth-child(4) > a {
+    position: relative;
+    display: block;
+}
+.wrap .header .my-list ul > li:nth-child(4) > a > span {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 0;
+    font-size: 10px;
+    color: #bf2928;
+}
+.wrap .header .my-list ul > li:nth-child(5) > a {
+    position: relative;
+    display: block;
+}
+.wrap .header .my-list ul > li:nth-child(5) > a > span {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 10px;
+    font-size: 10px;
+    color: #bf2928;
+}
+
+/* 2차 서브메뉴 */
+.wrap .header .menu-box-1 ul > li {
+    position: relative;
+}
+.wrap .header .menu-box-1 ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 120px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.wrap .header .menu-box-1 ul ul > li {
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.wrap .header .menu-box-1 ul ul > li > a {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+}
+
+.wrap .header .menu-box-1 ul > li:hover > ul {
+    display: block;
+    background-color: white;
+}
+
+/* 슬라이더 */
+body,
+h4 {
+    margin: 0;
+}
+
+.main_slider {
+    padding-bottom: 160px;
+}
+
+.main_slider
+    > .owl-carousel
+    > .owl-stage-outer
+    > .owl-stage
+    > .owl-item
+    > .item {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main_slider > .owl-carousel > .owl-nav {
+    margin-top: 0;
+}
+
+.main_slider .owl-carousel .owl-dots{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+}
+.main_slider > .owl-carousel > .owl-dots > .owl-dot > span {
+    border-radius: 0;
+    width: 50px;
+    height: 10px;
+    margin: 0 3px;
+    padding: 1px;
+    display: block;
+    background-color: #fff;
+}
+.main_slider > .owl-carousel > .owl-dots > .owl-dot.active > span {
+    background-color: #000;
+}
+.main_slider > .owl-carousel > .owl-dots > .owl-dot:hover > span {
+    background-color: #fff;
+}
+.main_slider > .owl-carousel > .owl-dots > .owl-dot.active:hover > span {
+    background-color: #000;
+}
+
+.main_slider > .owl-carousel > .owl-nav > .owl-prev,
+.main_slider > .owl-carousel > .owl-nav > .owl-next {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 2rem;
+}
+.main_slider > .owl-carousel > .owl-nav > .owl-prev:hover,
+.main_slider > .owl-carousel > .owl-nav > .owl-next:hover {
+    background-color: transparent;
+    color:black;
+}
+
+.main_slider > .owl-carousel > .owl-nav > .owl-next {
+    left: auto;
+    right: 50px;
+    /*!important : 나중에 설정한 값이 적용되지 않게 하기위해 잠금처럼 걸어두는 것*/
+}
+
+/* 6종롤링배너 */
+.banner-1{
+    width:62%;
+    margin:0 auto;
+}
+
+.banner-1> .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item {
+    background-color:red;
+    margin:0 auto;
+}
+
+.banner-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > h4 {
+    margin:0;
+}
+
+.banner-1 > .owl-carousel > .owl-nav > .owl-prev,
+.banner-1 > .owl-carousel > .owl-nav > .owl-next {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 2rem;
+    color:black;
+}
+.banner-1  > .owl-carousel > .owl-nav > .owl-prev:hover,
+.banner-1  > .owl-carousel > .owl-nav > .owl-next:hover {
+    background-color: transparent;
+    color:black;
+}
+
+.banner-1 > .owl-carousel > .owl-nav > .owl-next {
+    left:auto;
+    right:-100px;
+}
+
+.banner-1 > .owl-carousel > .owl-dots {
+    display:none;
+}
+
+
+/* 컨테이너 1*/
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.container > .title {
+    margin: 0 0 30px;
+}
+.container > .title > h2 > span {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 120px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+}
+
+.container-1 .hot-list > ul > li {
+    width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.container-1 .hot-list > ul > li > a > span {
+    display: block;
+}
+/* span 도 block이 아니므로 block화 해야 이미지 고유 사이즈로 커지는것이 아니라 너비 지정이 된다. */
+
+/* 상품 텍스트 박스 */
+.container-1 .hot-list > ul > li > a {
+    position: relative;
+}
+
+.container-1 .hot-list > ul > li > a > .txt-box {
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height: 100%;
+    visibility: hidden;
+    flex-direction:column; /*수직정렬*/
+}
+.container-1 .hot-list > ul > li:hover > a > .txt-box {
+    visibility: visible;
+    color:white;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > *:not(:first-child) {
+    margin-top: 10px;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chips {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 1px;
+    border: 1px solid #eee;
+    font-size: 0;
+    line-height: 0;
+    background-clip: padding-box;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-1,.chip-3,.chip-8 {
+    background-color:#FFFFFF ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-2,.chip-4,.chip-7,.chip-12 ,.chip-18 {
+    background-color:#000000 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-5 {
+    background-color:#111045 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-6 {
+    background-color:#667D50 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-9 {
+    background-color:#81FB82 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-10 {
+    background-color:#0000FD ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-11 {
+    background-color:#8D068E ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-13 {
+    background-color:#F5E26A ;
+}
+
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-14 {
+    background-color:#6CC2F0 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-15 {
+    background-color:#A3CCB0 ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-16 {
+    background-color:#FEC0CB ;
+}
+.container-1 .hot-list > ul > li > a > .txt-box > .color > .chip-17 {
+    background-color:#88CFB7 ;
+}
+
+
+/* 컨테이너 2*/
+.container-2 {
+    margin-top: 120px;
+}
+.container-2 .new-list > ul > li {
+    width: 33.333%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}

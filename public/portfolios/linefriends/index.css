@@ -574,19 +574,20 @@ label[for] {
 }
 
 /* 어바웃미 시작*/
-.section_about {
+.about {
     position: relative;
     padding: 110px 0 160px;
     text-align: center;
 }
 
-.section_about h2 {
+.about h2 {
     font-family: volteSemiBold;
     font-size: 80px;
     color: #404040;
     margin-bottom: 24px;
 }
-.section_about p {
+
+.about p {
     font-family: NanumBarunGothic;
     font-size: 13px;
     color: #333;
@@ -594,108 +595,120 @@ label[for] {
     width: 700px;
     margin: 0 auto;
 }
-.section_about > .img-box {
+
+.about>.img-box {
     width: 820px;
     height: 500px;
     margin-top: 50px;
-    margin-left:auto;
-    margin-right:auto;
-    cursor:pointer;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
-.section_about > .img-box > a{
-    display:block;
+
+.about>.img-box>a {
+    display: block;
 }
-.section_about > .img-box > a > img {
-    display:block;
+
+.about>.img-box>a>img {
+    display: block;
     width: 100%;
 }
 
 
 /*팝업*/
 
-body, ul, li {
-  margin:0;
-  padding:0;
-  list-style:none;
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 body {
-  height:10000px;
+    height: 10000px;
 }
 
 .youtube-popup-bg {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:rgba(0,0,0,0.8);
-  visibility:hidden;
-  opacity:0;
-  transition: visibility 0.4s, opacity 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s;
 }
+
 /* visibility -> 애니메이션 */
 
 .youtube-popup-actived .youtube-popup-bg {
-  opacity:1;
-  visibility:visible;
+    opacity: 1;
+    visibility: visible;
 }
 
-html.youtube-popup-actived, html.youtube-popup-actived > body {
-  overflow:hidden;
+html.youtube-popup-actived,
+html.youtube-popup-actived>body {
+    overflow: hidden;
 }
 
 .youtube-popup-bg .btn-close {
-  position:absolute;
-  width:50px;
-  height:50px;
-  top:50%;
-  left:50%;
-  margin-top:-350px;
-  margin-left:450px;
-  transform:translateX(-50%);
-  cursor:pointer;
-  background-image: url( "https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/layer_close2.png?raw=true" );
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  z-index: 5;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: 450px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-image: url("https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/layer_close2.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
 }
+
 /* top,right으로 띄우면 사이트를 축소했을때 비디오 팝업이랑 붙는게 아니라 배경의 가장자리 (모니터 화면 기준인 top, right를 띄웠으므로)에 붙게된다 그러므로 비디오 기준으로 margin-top, margin-left으로 조절 */
 
 .youtube-popup {
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translateX(-50%) translateY(-50%);
-  width:100%;
-  max-width:700px;
-  transition: visibility 0.4s, opacity 0.4s;
-  visibility:hidden;
-  opacity:0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 700px;
+    transition: visibility 0.4s, opacity 0.4s;
+    visibility: hidden;
+    opacity: 0;
 }
+
 /*  width:100%; -> 반응형 유연하게!!  max-width:700px; -> 하지만 700px때부터는 줄어들지 않게 */
- 
+
 
 .youtube-popup-actived .youtube-popup {
-  transition: visibility 0.4s .4s, opacity 0.4s .4s;
-  visibility:visible;
-  opacity:1;
+    transition: visibility 0.4s .4s, opacity 0.4s .4s;
+    visibility: visible;
+    opacity: 1;
 }
+
 /*  transition: visibility 0.4s .4s, opacity 0.4s .4s; -> 동영상이 순간적으로 바로 바뀌는게 싫다! 딜레이 약간 주기 (뒤에 붙는 .4s)*/
 .youtube-popup::after {
-  content:"";
-  display:block;
-  padding-top: 56.25%;
+    content: "";
+    display: block;
+    padding-top: 56.25%;
 }
-/* padding-top -> youtube-popup 너비의 % 비율 , 56.25% -> 16:9 */ 
-.youtube-popup > iframe {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+
+/* padding-top -> youtube-popup 너비의 % 비율 , 56.25% -> 16:9 */
+.youtube-popup>iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
 /* 위에 처럼하면 부모 youtube-popup 화면안으로 꽉 참! 하지만 youtube-popup에 높이를 안주면 보이질 않는다! 그러한 해결로 .youtube-popup::after를 지정하는것 */
 
 /* 이미지 슬라이더 시작 */
@@ -703,9 +716,9 @@ html.youtube-popup-actived, html.youtube-popup-actived > body {
 .slider-x {
     height: 100vh;
     position: relative;
-  }
-  
-  .slider-x > .slides > div {
+}
+
+.slider-x>.slides>div {
     position: absolute;
     top: 0;
     left: 0;
@@ -717,91 +730,239 @@ html.youtube-popup-actived, html.youtube-popup-actived > body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s, visibility 1s;
-  }
-  
-  .slider-x > .slides > div.active {
+}
+
+.slider-x>.slides>div.active {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .slider-x > .side-btns > div {
+}
+
+.slider-x>.side-btns>div {
     position: absolute;
     top: 50%;
     width: 31px;
     height: 60px;
     margin-top: -30px;
-    background: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/spr.png?raw=true)
-      no-repeat;
+    background: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/spr.png?raw=true) no-repeat;
     cursor: pointer;
-  }
-  .slider-x > .side-btns > .prev {
+}
+
+.slider-x>.side-btns>.prev {
     background-position: 0 -230px;
     margin-left: 60px;
-  }
-  
-  .slider-x > .side-btns > .next {
+}
+
+.slider-x>.side-btns>.next {
     background-position: 0 -160px;
     margin-right: 60px;
-  }
-  
-  .slider-x > .side-btns > div:last-child {
+}
+
+.slider-x>.side-btns>div:last-child {
     left: auto;
     right: 0;
-  }
-  
-  .slider-x > .page-box {
+}
+
+.slider-x>.page-box {
     position: absolute;
     left: 50%;
     bottom: 40px;
     width: 318px;
     height: 42px;
     margin-left: -155px;
-  }
-  
-  .slider-x > .page-box > .pages > div {
+}
+
+.slider-x>.page-box>.pages>div {
     width: 60px;
     height: 40px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: none;
-  }
-  
-  .slider-x > .page-box > .pages > div.visible {
+}
+
+.slider-x>.page-box>.pages>div.visible {
     display: block;
-  }
-  
-  .slider-x > .page-box > .pages > div.active {
+}
+
+.slider-x>.page-box>.pages>div.active {
     border: 2px solid green;
-  }
-  
-  .slider-x > .page-box > .pages > div::after {
+}
+
+.slider-x>.page-box>.pages>div::after {
     content: "";
     display: block;
     padding-top: 60%;
-  }
-  
-  /*슬라이더2 안에 이미지 슬라이더 사이드 버튼*/
-  .slider-x > .page-box > button {
+}
+
+/*슬라이더2 안에 이미지 슬라이더 사이드 버튼*/
+.slider-x>.page-box>button {
     position: absolute;
     left: 50%;
     bottom: 12px;
     width: 9px;
     height: 15px;
-    background: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/spr.png?raw=true)
-      no-repeat;
-  }
-  .slider-x > .page-box > button {
+    background: url(https://github.com/rimrumrom/img1/blob/master/portfolios/linefriends/spr.png?raw=true) no-repeat;
+    background-color: transparent;
+}
+
+.slider-x>.page-box>button {
     border: none;
     padding: 0;
     cursor: pointer;
-  }
-  .slider-x > .page-box > .prev {
+    background-color: transparent;
+    outline: none;
+}
+
+.slider-x>.page-box>.prev {
     margin-left: -171px;
     background-position: 0 -300px;
-  }
-  .slider-x > .page-box > .next {
+}
+
+.slider-x>.page-box>.next {
     margin-left: 172px;
     background-position: 0 -320px;
-  }
-  
+}
+
+/* business 시작 */
+.content>.business {
+    position: relative;
+    background: #faf8f5;
+}
+
+.content>.business>h2 {
+    padding: 110px 0 20px;
+    font-size: 80px;
+    font-family: volteSemiBold;
+    color: #404040;
+    text-align: center;
+}
+
+.content>.business>.sec_list {
+    overflow: hidden;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.content>.business>.sec_list>.first {
+    margin-left: 0;
+}
+
+.content>.business>.sec_list>li {
+    float: left;
+    width: 280px;
+    margin: 36px 0 0 120px;
+    color: #333;
+}
+
+.content>.business>.sec_list>li>div>span {
+    display: block;
+    margin: 16px 0 24px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content>.business>.sec_list>li>div>div {
+    overflow: hidden;
+    height: 120px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: NanumBarunGothic;
+}
+
+.content>.business>.btn_area {
+    overflow: hidden;
+    padding: 76px 0 120px;
+    text-align: center;
+}
+
+.content>.business>.btn_area>li {
+    margin-right: 18px;
+    background: #5c5e66;
+    display: inline-block;
+    width: 280px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.content>.business>.btn_area>li>a {
+    display: block;
+}
+
+.content>.business>.btn_area>li>a>span {
+    color: #fff;
+}
+
+/* media 시작 */
+.content>.media {
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+    padding: 97px 0 100px;
+}
+
+.content>.media>h2 {
+    margin-bottom: 38px;
+    font-size: 84px;
+    font-family: volteSemiBold;
+    color: #404040;
+    text-align: center;
+}
+
+.content>.media>.media_contents>ul>li {
+    margin-bottom: 19px;
+}
+
+.content>.media>.media_contents>ul>li>a {
+    display: block;
+    width: 1020px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list {
+    background: #fff;
+    height: 330px;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list>div>img {
+    float: left;
+    display: block;
+    width: 640px;
+    height: 330px;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list>.info_area {
+    float: left;
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 248px;
+    margin: 46px 40px 36px 40px;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list>.info_area>div:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list>.info_area>div:nth-child(2) {
+    font-size: 14px;
+    font-weight: 50px;
+    color: #666;
+    line-height: 22px;
+    font-family: NanumBarunGothic;
+}
+
+.content>.media>.media_contents>ul>li>a>.media_list>.info_area>div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-family: robotoLight;
+    color: #999;
+    letter-spacing: 1px;
+}
