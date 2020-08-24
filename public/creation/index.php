@@ -31,16 +31,16 @@
                 <img src="https://rimrumrom.github.io/img1/creation/b-img-1.png" alt="">
             </div>
             <div class="b-area b-area-1">
-                <div></div>
-                <div></div>
+                <div>신규오픈매장</div>
+                <div>대전 둔산점 | 대전 유성점 | 서울 홍대점 | 서울 영등포점</div>
             </div>
             <div class="b-area b-area-2">
-                <div></div>
-                <div></div>
+                <div>오픈예정매장</div>
+                <div>부산 광안리점 | 부산 서면점</div>
             </div>
-            <div class="b-img-2">
-                <div class="month"></div>
-                <img src="" alt="">
+            <div class="month">*20년 08월 기준</div>
+            <div class="b-img-2 flex">
+                <img src="https://rimrumrom.github.io/img1/creation/b-img-2.png" alt="">
             </div>
         </div>
         <button type="button" class="b-close" onclick="$('.top-banner').addClass('close')">
