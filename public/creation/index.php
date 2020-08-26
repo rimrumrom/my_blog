@@ -90,10 +90,40 @@
                 </a>
                 <div class="menu-box-1">
                     <ul class="flex height-100p">
-                        <li class="flex"><a href="#" class="flex flex-ai-c flex-jc-c">BRAND</a></li>
-                        <li class="flex"><a href="#" class="flex flex-ai-c flex-jc-c">MENU</a></li>
-                        <li class="flex"><a href="#" class="flex flex-ai-c flex-jc-c">STORE</a></li>
-                        <li class="flex"><a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">COMMUNITY</a></li>
+                        <li class="flex">
+                            <a href="#" class="flex flex-ai-c flex-jc-c">BRAND
+                            </a>
+                            <ul>
+                                <li><a href="#">대표인사말</a></li>
+                                <li><a href="#">죠스이야기</a></li>
+                                <li><a href="#">채용정보</a></li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <a href="#" class="flex flex-ai-c flex-jc-c">MENU
+                            </a>
+                            <ul>
+                                <li><a href="#">메인메뉴</a></li>
+                                <li><a href="#">세트메뉴</a></li>
+                                <li><a href="#">사이드메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <a href="#" class="flex flex-ai-c flex-jc-c">STORE
+                            </a>
+                            <ul>
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">매장 안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="flex">
+                            <a href="#" class="flex flex-grow-1 flex-ai-c flex-jc-c">COMMUNITY
+                            </a>
+                            <ul>
+                                <li><a href="#">커뮤니티</a></li>
+                                <li><a href="#">고객의 소리</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <a href="/" class="shop flex flex-ai-c">
@@ -140,9 +170,8 @@
                             transform="translate(-18.5 -16.81)" />
                     </svg>
                 </a>
+                <div class="menu-box-1-hover-background"></div>
             </div>
-            <div class="main-slider"></div>
-            <div class="txt-wrap"></div>
         </div>
         <!-- 비디오 슬라이더 -->
         <div class="my-slider-1 con-min-width autoplay-now-work">
@@ -153,7 +182,7 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="height-100p con flex flex-ai-c">
-                            <h1>태봉이네1</h1>
+                            <h1>매콤한 국물이 별미 <br>태봉이 국물닭발</h1>
                         </div>
                         <video
                             src="https://rimrumrom.github.io/img1/creation/%ED%95%9C%EC%8B%A0%EB%8B%AD%EB%B0%9C_20171103.mp4 "

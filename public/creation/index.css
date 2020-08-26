@@ -383,20 +383,25 @@ label[for] {
 .top-banner.close {
   display: none;
 }
+
 .top-banner .b-inner {
   height: 100%;
   align-items: flex-end;
 }
-.top-banner .b-inner> .month {
+
+.top-banner .b-inner>.month {
   font-size: 10px;
 }
-.top-banner .b-inner> div:not(:first-child){
+
+.top-banner .b-inner>div:not(:first-child) {
   margin-left: 80px;
 }
+
 .top-banner .b-inner .b-area {
   margin-bottom: 15px;
 }
-.top-banner .b-inner .b-area > div:first-child{
+
+.top-banner .b-inner .b-area>div:first-child {
   background-color: black;
   width: 135px;
   height: 42px;
@@ -406,9 +411,11 @@ label[for] {
   margin-bottom: 5px;
   font-size: 18px;
 }
-.top-banner .b-inner .b-area > div:nth-child(2){
+
+.top-banner .b-inner .b-area>div:nth-child(2) {
   font-size: 15px;
 }
+
 .top-banner .b-close {
   position: absolute;
   top: 50%;
@@ -439,6 +446,60 @@ label[for] {
   justify-content: space-between;
 }
 
+.main>.top-bar>.menu-box-1>ul>li {
+  position: relative;
+}
+
+.main>.top-bar>.menu-box-1>ul>li>a {
+  display: block;
+  padding: 0 40px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 80px;
+  color: #ffffff;
+  text-transform: uppercase;
+  /*대문자 전환*/
+  transition: all .3s;
+}
+
+.main>.top-bar>.menu-box-1>ul ul {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 24px 0 0 0;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.3s;
+}
+
+.top-bar>.menu-box-1:hover>ul ul {
+  height: 150px;
+}
+
+.main>.top-bar>.menu-box-1:hover>ul>li>a {
+  color: black;
+}
+
+
+.top-bar>.menu-box-1-hover-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  display: none;
+}
+
+.top-bar>.menu-box-1:hover~.menu-box-1-hover-background {
+  display: block;
+}
+
 .main>.top-bar>.logo>.logo-svg {
   width: 60px;
 }
@@ -447,41 +508,36 @@ label[for] {
   width: 178px;
 }
 
-.main>.top-bar>.menu-box-1>ul>li>a {
-  padding: 0 30px;
-  font-weight: 800;
-  font-size: 24px;
-  color: white;
+.main>.top-bar>.menu-box-1:hover {
+  background-color: white;
 }
 
-.main>.top-bar>.menu-box-1>ul>li:hover>a {}
-
-svg:hover .st0,
+.main>.top-bar>.menu-box-1:hover ~.st0,
 .st1 {
   fill: black;
   /*transition: fill 1s;*/
 }
 
-svg:hover .st2 {
+.main>.top-bar>.menu-box-1:hover ~.st2 {
   fill: #9C0A1F;
   /*transition: fill 1s;*/
 }
 
-svg:hover .cls-2 {
+.main>.top-bar>.menu-box-1:hover ~.cls-2 {
   fill: #9C0A1F;
   /*transition: fill 1s;*/
 }
 
-svg:hover .cls-3 {
-  fill: #fff;
-  /*transition: fill 1s;*/
+.main>.top-bar>.menu-box-1:hover ~.cls-3 {
+  fill: #fff
+    /*transition: fill 1s;*/
 }
 
 
 /* 비디오 슬라이더 */
 
 .my-slider-1 {
-  height: 100vh;
+  height: 70vh;
   color: white;
 }
 
