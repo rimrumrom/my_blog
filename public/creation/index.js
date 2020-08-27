@@ -1,5 +1,4 @@
-$(function () {
-
+function swiper__init(){
   var swiper = new Swiper('.my-slider-1 > .swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -29,21 +28,21 @@ $(function () {
     $('.my-slider-1').removeClass('autoplay-now-work');
   });
   
-});
+}
 
 var $html = $('html');
 /*탑바안에 메뉴박스에 마우스 올릴때 활성화*/
 function TopBar__init() {
-$('.top-bar .menu-box-1').mouseenter(function() {
-  $html.addClass('top-bar-menu-box-1-actived');
-});
+  $('.top-bar .menu-box-1').mouseenter(function() {
+    $html.addClass('top-bar-menu-box-1-actived');
+  });
 
-$('.top-bar .menu-box-1').mouseleave(function() {
-  $html.removeClass('top-bar-menu-box-1-actived');
-});
+  $('.top-bar .menu-box-1').mouseleave(function() {
+    $html.removeClass('top-bar-menu-box-1-actived');
+  });
 }
 
-TopBar__init();
+
 
 var $window = $(window);
 // 스크롤바를 통해서 얼만큼 깊이 내려왔는지(px)
@@ -109,4 +108,60 @@ function FootBar__init() {
   onWindowResize();
 }
 
-FootBar__init();
+function ActiveOnVisible__init() {
+  $(window).resize(ActiveOnVisible__initOffset);
+  ActiveOnVisible__initOffset();
+
+  $(window).scroll(ActiveOnVisible__checkAndActive);
+  ActiveOnVisible__checkAndActive();
+}
+
+function ActiveOnVisible__initOffset() {
+  $('.active-on-visible').each(function(index, node) {
+      var $node = $(node);
+
+      var offsetTop = $node.offset().top;
+      $node.attr('data-active-on-visible-offsetTop', offsetTop);
+
+      if ( !$node.attr('data-active-on-visible-diff-y') ) {
+          $node.attr('data-active-on-visible-diff-y', '0');
+      }
+
+      if ( !$node.attr('data-active-on-visible-delay') ) {
+          $node.attr('data-active-on-visible-delay', '0');
+      }
+  });
+
+  ActiveOnVisible__checkAndActive();
+}
+
+function ActiveOnVisible__checkAndActive() { 
+  $('.active-on-visible:not(.actived)').each(function(index, node) {
+      var $node = $(node);
+
+      var offsetTop = $node.attr('data-active-on-visible-offsetTop') * 1;
+      var diffY = parseInt($node.attr('data-active-on-visible-diff-y'));
+      var delay = parseInt($node.attr('data-active-on-visible-delay'));
+
+      var callbackFuncName = $node.attr('data-active-on-visible-callback-func-name');
+
+      if ( $(window).scrollTop() + $(window).height() + diffY > offsetTop ) {
+          $node.addClass('actived');
+
+          setTimeout(function() {
+              $node.addClass('active');
+              if ( window[callbackFuncName] ) {
+                  window[callbackFuncName]($node);
+              }
+          }, delay);
+      }
+  });
+}
+
+
+$(function(){
+  swiper__init();
+  FootBar__init();
+  TopBar__init();
+  ActiveOnVisible__init();
+})
