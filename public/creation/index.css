@@ -98,8 +98,8 @@ label[for] {
   clear: both;
 }
 
-.img-box > img,
-.img-box > svg {
+.img-box>img,
+.img-box>svg {
   width: 100%;
   display: block;
 }
@@ -126,7 +126,7 @@ label[for] {
   line-height: 0;
 }
 
-.line-height-0 > * {
+.line-height-0>* {
   line-height: normal;
 }
 
@@ -239,7 +239,7 @@ label[for] {
   clear: non;
 }
 
-.table-row > .cell {
+.table-row>.cell {
   float: none;
   display: table-cell;
 }
@@ -265,80 +265,83 @@ label[for] {
 }
 
 /* 라이브러리 - flex */
-* > .flex {
+*>.flex {
   display: flex;
 }
 
-* > .flex-grow-1 {
+*>.flex-grow-1 {
   flex-grow: 1;
 }
 
-* > .flex-jc-c {
+*>.flex-jc-c {
   justify-content: center;
 }
 
-* > .flex-jc-s {
+*>.flex-jc-s {
   justify-content: flex-start;
 }
 
-* > .flex-jc-e {
+*>.flex-jc-e {
   justify-content: flex-end;
 }
 
-* > .flex-jc-sb {
+*>.flex-jc-sb {
   justify-content: space-between;
 }
 
-* > .flex-ai-c {
+*>.flex-ai-c {
   align-items: center;
 }
 
-* > .flex-ai-s {
+*>.flex-ai-s {
   align-items: flex-start;
 }
 
-* > .flex-ai-e {
+*>.flex-ai-e {
   align-items: flex-end;
 }
 
-* > .flex-as-s {
+*>.flex-as-s {
   align-self: stretch;
 }
 
-* > .flex-as-c {
+*>.flex-as-c {
   align-self: center;
 }
 
-* > .flex-as-s {
+*>.flex-as-s {
   align-self: flex-start;
 }
 
-* > .flex-as-e {
+*>.flex-as-e {
   align-self: flex-end;
 }
 
-* > .flex-column-nowrap {
+*>.flex-column-nowrap {
   flex-flow: column nowrap;
 }
 
-* > .flex-column-wrap {
+*>.flex-column-wrap {
   flex-flow: column wrap;
 }
 
-* > .flex-row-wrap {
+*>.flex-row-wrap {
   flex-flow: row wrap;
 }
 
-.flex-ch-basis-0 > * {
+.flex-ch-basis-0>* {
   flex-basis: 0;
 }
 
-* > .flex-1-0-0 {
+*>.flex-1-0-0 {
   flex: 1 0 0;
 }
 
 
 /* 커스텀 */
+body {
+  position: relative;
+}
 
 /* 고정형 .con 시작 */
 .con-min-width {
@@ -348,19 +351,19 @@ label[for] {
 .con {
   width: 1200px;
 }
+
 .con.con-2 {
   width: 1400px;
 }
+
+/* 최소, 최대 고정 너비를 줘서 고정형이지만 약간의 배경(날개)는 좀 더 커지게 (각 종의 모니터 크기를 고려해서) */
 .page-con {
-  width: 1903;
+  max-width: 2560px;
+  min-width: 1903px;
   margin-left: auto;
   margin-right: auto;
 }
 
-body {
-  height: 100vh;
-  background-color: pink;
-}
 
 /* 상단 팝업창 */
 .top-banner {
@@ -384,11 +387,11 @@ body {
   align-items: flex-end;
 }
 
-.top-banner .b-inner > .month {
+.top-banner .b-inner>.month {
   font-size: 10px;
 }
 
-.top-banner .b-inner > div:not(:first-child) {
+.top-banner .b-inner>div:not(:first-child) {
   margin-left: 80px;
 }
 
@@ -396,7 +399,7 @@ body {
   margin-bottom: 15px;
 }
 
-.top-banner .b-inner .b-area > div:first-child {
+.top-banner .b-inner .b-area>div:first-child {
   background-color: black;
   width: 135px;
   height: 42px;
@@ -407,7 +410,7 @@ body {
   font-size: 18px;
 }
 
-.top-banner .b-inner .b-area > div:nth-child(2) {
+.top-banner .b-inner .b-area>div:nth-child(2) {
   font-size: 15px;
 }
 
@@ -428,9 +431,11 @@ body {
   width: 100%;
   height: 79px;
   transition: background-color 0.4s, height 0.4s;
-  overflow: hidden; /*서브메뉴박스가 짤림(나오지않음)*/
+  overflow: hidden;
+  /*서브메뉴박스가 짤림(나오지않음)*/
   z-index: 100;
 }
+
 /*탑바 아래 밑줄*/
 .top-bar::before {
   content: "";
@@ -444,7 +449,7 @@ body {
   opacity: 0.3;
 }
 
-.top-bar > .con {
+.top-bar>.con {
   position: relative;
   height: 79px;
 }
@@ -460,12 +465,13 @@ body {
 .top-bar .logo {
   width: 70px;
 }
+
 /* 탑바에 올리면 색상 변환 */
-.top-bar:hover .logo > svg .st2 {
+.top-bar:hover .logo>svg .st2 {
   transition: fill 0.4s;
 }
 
-.top-bar:hover .logo > svg .st2 {
+.top-bar:hover .logo>svg .st2 {
   fill: black;
 }
 
@@ -473,55 +479,58 @@ body {
   width: 130px;
 }
 
-.top-bar .btn-go-franchise > svg .cls-2 {
+.top-bar .btn-go-franchise>svg .cls-2 {
   transition: fill 0.4s;
 }
 
-.top-bar:hover .btn-go-franchise > svg .cls-2 {
+.top-bar:hover .btn-go-franchise>svg .cls-2 {
   fill: #9c0a1f;
 }
 
-.top-bar .btn-go-franchise > svg .cls-3 {
+.top-bar .btn-go-franchise>svg .cls-3 {
   transition: fill 0.4s;
 }
 
-.top-bar:hover .btn-go-franchise > svg .cls-3 {
+.top-bar:hover .btn-go-franchise>svg .cls-3 {
   fill: #fff;
 }
 
-.top-bar .menu-box-1 ul > li > a {
+.top-bar .menu-box-1 ul>li>a {
   color: white;
   transition: color 0.4s;
 }
 
-.top-bar:hover .menu-box-1 ul > li > a {
+.top-bar:hover .menu-box-1 ul>li>a {
   color: black;
 }
 
-.top-bar .menu-box-1 > ul > li > a {
+.top-bar .menu-box-1>ul>li>a {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 0 30px;
 }
+
 /* 각 서브메뉴별 이미지 노출*/
-.top-bar .menu-box-1 > ul > li > .img-box {
+.top-bar .menu-box-1>ul>li>.img-box {
   position: absolute;
   top: 100px;
-  left: 0; /*중앙에서부터 배치하기*/
+  left: 0;
+  /*중앙에서부터 배치하기*/
   display: none;
   font-size: 22px;
   font-weight: bold;
 }
-.top-bar .menu-box-1 > ul > li > .img-box > span {
+
+.top-bar .menu-box-1>ul>li>.img-box>span {
   font-weight: normal;
   font-size: 12px;
 }
 
-.top-bar .menu-box-1 > ul > li:hover > .img-box {
+.top-bar .menu-box-1>ul>li:hover>.img-box {
   display: block;
 }
 
-.top-bar .menu-box-1 > ul > li > div > ul {
+.top-bar .menu-box-1>ul>li>div>ul {
   position: absolute;
   top: 100%;
   left: 0;
@@ -529,27 +538,28 @@ body {
   height: 300px;
 }
 
-.top-bar .menu-box-1 > ul > li > div > ul > li:first-child {
+.top-bar .menu-box-1>ul>li>div>ul>li:first-child {
   padding-top: 30px;
 }
 
-.top-bar .menu-box-1 > ul > li:hover > div > ul {
+.top-bar .menu-box-1>ul>li:hover>div>ul {
   background-color: #f1ebe7;
 }
 
-.top-bar .menu-box-1 > ul > li > div > ul > li > a {
+.top-bar .menu-box-1>ul>li>div>ul>li>a {
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
 }
+
 /* 비디오 슬라이더 */
 
 .my-slider-1 {
-  height: 70vh;
+  height: 840px;
   color: white;
 }
 
-.my-slider-1 > .swiper-container .swiper-slide > video {
+.my-slider-1>.swiper-container .swiper-slide>video {
   position: absolute;
   top: 0;
   left: 0;
@@ -559,7 +569,7 @@ body {
   z-index: -1;
 }
 
-.my-slider-1 > .swiper-container .nav-box {
+.my-slider-1>.swiper-container .nav-box {
   position: absolute;
   z-index: 1000;
   bottom: 100px;
@@ -567,47 +577,38 @@ body {
   font-size: 2rem;
 }
 
-.my-slider-1 > .swiper-container .nav-box > .btn {
+.my-slider-1>.swiper-container .nav-box>.btn {
   cursor: pointer;
 }
 
-.my-slider-1 > .swiper-container .nav-box > *:not(:last-child) {
+.my-slider-1>.swiper-container .nav-box>*:not(:last-child) {
   margin-right: 10px;
 }
 
-.my-slider-1.autoplay-now-work > .swiper-container .nav-box > .btn-start {
+.my-slider-1.autoplay-now-work>.swiper-container .nav-box>.btn-start {
   display: none;
 }
 
-.my-slider-1:not(.autoplay-now-work) > .swiper-container .nav-box > .btn-stop {
+.my-slider-1:not(.autoplay-now-work)>.swiper-container .nav-box>.btn-stop {
   display: none;
-}
-
-.bottom-bar {
-  height:300px;
-  background-color:black;
-}
-
-.middle::after {
-  content:"";
-  display:block;
-  padding-top:1000%;
 }
 
 .foot-bar {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:100px;
-  background-color:#f1ebe7;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #f1ebe7;
   z-index: 100;
 }
+
 /* 매장 */
 .page-1 {
   position: relative;
-  height:670px;
+  height: 670px;
 }
+
 .page-1::before {
   content: "";
   position: absolute;
@@ -617,6 +618,7 @@ body {
   height: 100%;
   background-color: #9c0a1f;
 }
+
 .page-1::after {
   content: "";
   position: absolute;
@@ -627,13 +629,13 @@ body {
   background-color: #fff;
 }
 
-.page-1 > .con > div {
+.page-1>.con>div {
   width: 472px;
   z-index: 100;
-  margin-top:80px;
+  margin-top: 80px;
 }
 
-.page-1 > .con > div:first-child > .head > h2 {
+.page-1>.con>div:first-child>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
@@ -643,20 +645,21 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-1 > .con > div:first-child > .head > h1 {
+.page-1>.con>div:first-child>.head>h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 80px;
   letter-spacing: -8px;
   color: #fff;
 }
-.page-1 > .con > div:first-child > .head > h1 > span {
+
+.page-1>.con>div:first-child>.head>h1>span {
   font-weight: 700;
   font-size: 72px;
   letter-spacing: -2px;
 }
 
-.page-1 > .con > div > .head > h2 {
+.page-1>.con>div>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
@@ -665,26 +668,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-1 > .con > div > .head > h1 {
+.page-1>.con>div>.head>h1 {
   margin: 48px 0;
   font-weight: 400;
   font-size: 72px;
   line-height: 80px;
   letter-spacing: -8px;
 }
-.page-1 > .con > div > .head > h1 > span {
+
+.page-1>.con>div>.head>h1>span {
   font-weight: 700;
   font-size: 72px;
   letter-spacing: -2px;
 }
-.page-1 > .con > div > div > div > a {
+
+.page-1>.con>div>div>div>a {
   display: block;
   height: 65px;
   width: 350px;
   padding: 0 0 0 24px;
   border-radius: 5px;
-  background: #171717 url(https://rimrumrom.github.io/img1/creation/arr_btn.png)
-    no-repeat right 23px center;
+  background: #171717 url(https://rimrumrom.github.io/img1/creation/arr_btn.png) no-repeat right 23px center;
   font-weight: 400;
   font-size: 20px;
   line-height: 65px;
@@ -692,7 +696,7 @@ body {
   text-decoration: none;
 }
 
-.page-1 > .con > div > div > div > .search {
+.page-1>.con>div>div>div>.search {
   display: block;
   width: 350px;
   height: 65px;
@@ -703,17 +707,19 @@ body {
   font-size: 20px;
   color: #ac162c;
 }
-.page-1 > .con > div > div > div {
+
+.page-1>.con>div>div>div {
   position: relative;
 }
-.page-1 > .con > div > div > div > .btn_search {
+
+.page-1>.con>div>div>div>.btn_search {
   position: absolute;
   top: 19px;
   right: 100px;
-  border:none;
-  outline:none;
+  border: none;
+  outline: none;
   background-color: transparent;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* 메뉴 */
@@ -723,18 +729,19 @@ body {
   background-color: #e9e1e0;
   overflow: hidden;
 }
+
 .page-2 .con {
   position: relative;
   height: 100%;
 }
 
-.page-2 > .con > div.txt-box {
+.page-2>.con>div.txt-box {
   width: 472px;
   z-index: 100;
   margin-top: 80px;
 }
 
-.page-2 > .con > div:first-child > .head > h2 {
+.page-2>.con>div:first-child>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
@@ -744,58 +751,59 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-2 > .con > div:first-child > .head > h1 {
+.page-2>.con>div:first-child>.head>h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 100px;
   letter-spacing: -8px;
   color: #9c0a1f;
 }
-.page-2 > .con > div:first-child > .head > h1 > span {
+
+.page-2>.con>div:first-child>.head>h1>span {
   font-weight: 700;
   font-size: 72px;
   letter-spacing: -2px;
 }
 
-.page-2 > .con > div > .head > h2 {
+.page-2>.con>div>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
   padding: 0 0 0 60px;
   background-image: url(https://rimrumrom.github.io/img1/creation/store.png);
   background-repeat: no-repeat;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.page-2 > .con > div > .head > h1 {
+.page-2>.con>div>.head>h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 80px;
   letter-spacing: -8px;
 }
-.page-2 > .con > div > .head > h1 > span {
+
+.page-2>.con>div>.head>h1>span {
   font-weight: 700;
   font-size: 72px;
   letter-spacing: -2px;
 }
-.page-2 > .con > div > div > div > a {
+
+.page-2>.con>div>div>div>a {
   display: block;
   height: 65px;
   width: 350px;
   padding: 0 0 0 24px;
   border-radius: 5px;
-  background: #9c0a1f
-      url(https://rimrumrom.github.io/img1/creation/arr_btn.png) no-repeat
-      right 23px center;
+  background: #9c0a1f url(https://rimrumrom.github.io/img1/creation/arr_btn.png) no-repeat right 23px center;
   font-weight: 400;
   font-size: 20px;
   line-height: 65px;
   color: #ffffff;
   text-decoration: none;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-.page-2 > .con > div.img-box {
+.page-2>.con>div.img-box {
   position: absolute;
   bottom: -30%;
   right: 0;
@@ -803,14 +811,17 @@ body {
   opacity: 0;
   transition: bottom 1.5s, opacity 1.5s;
 }
-.page-2 .con .img-box img{
-  display:block;
+
+.page-2 .con .img-box img {
+  display: block;
   width: 100%;
 }
+
 .page-2.active .con .img-box {
   bottom: 0;
   opacity: 1;
 }
+
 /* .page-2 .con .txt-box > {
   margin-top: 200px;
   transition: margin 1s;
@@ -821,28 +832,32 @@ body {
 
 /* 모바일 */
 .page-3 {
-  height:670px;
+  height: 670px;
   overflow: hidden;
   position: relative;
 }
+
+/* 눈금 투명도 조절 : page-3 에 직접 주면 안에있는 컨텐츠 (div)들도 투명해지므로 after을 만들어서 조절 */
 .page-3::after {
-  content : "";
+  content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
- background-image: url(https://rimrumrom.github.io/img1/creation/pattern2.png);
+  background-image: url(https://rimrumrom.github.io/img1/creation/pattern2.png);
   width: 100%;
   height: 100%;
-  opacity : 0.2;
+  opacity: 0.2;
   z-index: -10;
 }
+
 .page-3 .con {
   position: relative;
   height: 100%;
   justify-content: flex-end;
 }
-.page-3 > .con > div.img-box {
+
+.page-3>.con>div.img-box {
   position: absolute;
   bottom: -30%;
   left: 0;
@@ -850,29 +865,42 @@ body {
   opacity: 0;
   transition: bottom 1.5s, opacity 1.5s;
 }
+
 .page-3 .con .img-box img {
   display: block;
   width: 100%;
 }
+
 .page-3.active .con .img-box {
   bottom: 0;
   opacity: 1;
 }
+
 .page-3 .con .txt-box {
   margin-top: 50px;
 }
-.page-3 > .con > div > .head > h2 {
+.page-3>.con>div>.head {
+  margin-top: 100px;
+}
+.page-3>.con>div>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
-  padding: 0 0 0 60px;
-  background-image: url(https://rimrumrom.github.io/img1/creation/mobile-alt-solid.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top:100px;
+  text-align: right;
+}
+.page-3>.con>div>.head>h2 > span:first-child {
+  display: inline-block;
+  width: 20px;
+}
+.page-3>.con>div>.head>h2 > span > img {
+  display: inline-block;
+  width: 100%;
+}
+.page-3>.con>div>.head>h2 > span + span{
+  margin-left: 20px;
 }
 
-.page-3 > .con > div > .head > h1 {
+.page-3>.con>div>.head>h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 80px;
@@ -881,24 +909,153 @@ body {
   color: #000;
   margin-top: 50px;
 }
-.page-3 > .con > div > .head > h1 > span {
+
+.page-3>.con>div>.head>h1>span {
   font-weight: 400;
   font-size: 72px;
   letter-spacing: 10px;
   color: #000;
 }
-.page-3 > .con > div > .head > h1 > span:nth-of-type(1) {
+
+.page-3>.con>div>.head>h1>span:nth-of-type(1) {
   color: #9c0a1f;
 }
-.page-3 > .con >.circle-img1 {
+
+.page-3>.con>.circle-img1 {
   position: absolute;
   bottom: 0;
   left: -300px;
   z-index: -1;
 }
-.page-3 > .con >.circle-img2 {
+
+.page-3>.con>.circle-img2 {
   position: absolute;
   top: 0;
-  right:-200px;
+  right: -200px;
   z-index: -1;
+}
+
+/* 채용 */
+.page-4 {
+  height: 670px;
+  overflow: hidden;
+}
+
+.page-4 .con {
+  position: relative;
+  height: 100%;
+}
+
+.page-4>.con>.circle-img1 {
+  position: absolute;
+  bottom: 100px;
+  left: -300px;
+}
+
+.page-4>.con>.circle-img2 {
+  position: absolute;
+  top: 0;
+  right: -200px;
+}
+
+.page-4>.con>div.img-box {
+  margin-top: 120px;
+  width: 30%;
+}
+
+.page-4 .con .img-box img {
+  display: block;
+  width: 100%;
+}
+
+.page-4>.con>div>.head>h2 {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 42px;
+  padding: 0 0 0 60px;
+  background-image: url(https://rimrumrom.github.io/img1/creation/people-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
+}
+
+.page-4>.con>div>.head>h1 {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000;
+  margin-top: 50px;
+}
+
+.page-4>.con>div>.head>h1>span {
+  font-weight: 600;
+  font-size: 72px;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+/* 하단바 */
+.footer-bar {
+  height: 200px;
+  background-color: #282828;
+}
+
+.footer-bar>.con {
+  padding-top: 30px;
+}
+
+.footer-bar>.con>.txt-box>.head {
+  font-size: 22px;
+  font-weight: bold;
+  color: #CCCCCC;
+}
+
+.footer-bar>.con>.txt-box>.body {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+
+/* 따라다니는 풋바 */
+.foot-bar>.con {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.foot-bar>.con>div {
+  margin-right: 80px;
+}
+
+.foot-bar>.con>div:first-child {
+  width: 200px;
+  color: #9c0a1f;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.foot-bar>.con>div>input {
+  height: 20px;
+  width: 120px;
+  background: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  color: #222222;
+}
+
+.foot-bar>.con>.btn {
+  background: #464646;
+  color: #ffffff;
+  width: 145px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 6px;
 }

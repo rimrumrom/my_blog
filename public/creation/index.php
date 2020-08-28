@@ -24,7 +24,7 @@
     <script src="./index.js"></script>
 </head>
 
-<body>
+<body class="page-con">
     <!-- 탑 팝업 -->
     <div class="top-banner">
         <div class="b-inner con flex">
@@ -279,16 +279,39 @@
         </div>
     </div>
     <!-- 모바일 -->
-    <div class="page-3 con-min-width page-con active-on-visible flex"  data-active-on-visible-diff-y="-600">
+    <div class="page-3 con-min-width active-on-visible flex" data-active-on-visible-diff-y="-600">
         <div class="con flex flex-jc-sb">
             <div class="img-box">
                 <img src="https://rimrumrom.github.io/img1/creation/page-3-mobile.png" alt="">
             </div>
             <div class="txt-box">
                 <div class="head">
-                    <h2>MOBILE ORDER</h2>
+                    <h2>
+                        <span><img src="https://rimrumrom.github.io/img1/creation/mobile-alt-solid.png" alt=""></span>
+                        <span>MOBILE ORDER</span>
+                    </h2>
                     <h1>배달도 되고,<br><span> 선물도 됩니다.</span><br><span>태봉이푸드.</span></h1>
                 </div>
+            </div>
+            <div class="circel circle-img1">
+                <img src="https://rimrumrom.github.io/img1/creation/one1.png" alt="">
+            </div>
+            <div class="circel circle-img2">
+                <img src="https://rimrumrom.github.io/img1/creation/one2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 채용 -->
+    <div class="page-4 con-min-width active-on-visible" data-active-on-visible-diff-y="-400">
+        <div class="con flex flex-jc-sb">
+            <div class="txt-box">
+                <div class="head">
+                    <h2>PEOPLE</h2>
+                    <h1>태봉이와 함께 할<br><span>당신을</span><br><span>모십니다.</span></h1>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="https://rimrumrom.github.io/img1/creation/people-2.png" alt="">
             </div>
             <div class="circle-img1">
                 <img src="https://rimrumrom.github.io/img1/creation/one1.png" alt="">
@@ -298,11 +321,44 @@
             </div>
         </div>
     </div>
-
     <!-- 따라다니는 풋바, 하단바 -->
-    <div class="foot-bar"></div>
-    <div class="middle"></div>
-    <div class="bottom-bar foot-bar-on"></div>
+    <div class="foot-bar">
+        <div class="con flex flex-ai-c flex-jc-c">
+            <div class="tit">창업 상담 신청</div>
+            <div class="info-1">
+                <input type="text" class="name" placeholder="이름" maxlength="20">
+            </div>
+            <div class="info-2 flex">
+                <input type="text" class="num-1" placeholder="" maxlength="20">
+                <input type="text" class="num-2" placeholder="" maxlength="20">
+                <input type="text" class="num-3" placeholder="" maxlength="20">
+            </div>
+            <div class="btn">
+                <input type="button" class="num-3" placeholder="" value="신청하기" maxlength="20">
+            </div>
+        </div>
+    </div>
+    <footer class="footer-bar foot-bar-on">
+        <div class="con flex flex-jc-sb">
+            <div class="txt-box txt-box-1">
+                <div class="head">
+                    <div>주식회사 태봉이푸드</div>
+                </div>
+                <div class="body">
+                    <div>대전 서구 관저중로 95번길 18(관저동)</div>
+                    <div>대표자 : 김미화</div>
+                    <div>통신판매업신고 : 2020-대전-야호</div>
+                    <div>사업자등록번호 : 888-88-8888</div>
+                </div>
+            </div>
+            <div class="txt-box txt-box-2">
+                <div class="head">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
