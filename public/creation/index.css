@@ -1021,7 +1021,6 @@ body {
 
 /* 따라다니는 풋바 */
 .foot-bar>.con {
-  border: 1px solid black;
   height: 100%;
 }
 
@@ -1033,13 +1032,12 @@ body {
   width: 200px;
   color: #9c0a1f;
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
-  border: 1px solid black;
 }
 
 .foot-bar>.con>div>input {
-  height: 20px;
+  height: 30px;
   width: 120px;
   background: #ffffff;
   font-size: 14px;
@@ -1048,14 +1046,21 @@ body {
   color: #222222;
 }
 
-.foot-bar>.con>.btn {
+.foot-bar>.con>.btn>input {
   background: #464646;
   color: #ffffff;
   width: 145px;
+  height: 40px;
   font-weight: 700;
   font-size: 16px;
   line-height: 40px;
   text-align: center;
   vertical-align: top;
   border-radius: 6px;
+}
+.foot-bar>.con>.info-2>.dash{
+  width: 10px;
+  height: 2px;
+  font-size: 14px;
+  background-color: #999;
 }

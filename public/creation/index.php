@@ -328,9 +328,11 @@
             <div class="info-1">
                 <input type="text" class="name" placeholder="이름" maxlength="20">
             </div>
-            <div class="info-2 flex">
+            <div class="info-2 flex flex-ai-c">
                 <input type="text" class="num-1" placeholder="" maxlength="20">
+                <span class="dash"></span>
                 <input type="text" class="num-2" placeholder="" maxlength="20">
+                <span class="dash"></span>
                 <input type="text" class="num-3" placeholder="" maxlength="20">
             </div>
             <div class="btn">
