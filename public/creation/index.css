@@ -1,5 +1,10 @@
+/* 폰트 */
+/* notosans폰트 */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* roboto폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* signika폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
 
 html {
   /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
@@ -879,24 +884,29 @@ body {
 .page-3 .con .txt-box {
   margin-top: 50px;
 }
+
 .page-3>.con>div>.head {
   margin-top: 100px;
 }
+
 .page-3>.con>div>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
   text-align: right;
 }
-.page-3>.con>div>.head>h2 > span:first-child {
+
+.page-3>.con>div>.head>h2>span:first-child {
   display: inline-block;
   width: 20px;
 }
-.page-3>.con>div>.head>h2 > span > img {
+
+.page-3>.con>div>.head>h2>span>img {
   display: inline-block;
   width: 100%;
 }
-.page-3>.con>div>.head>h2 > span + span{
+
+.page-3>.con>div>.head>h2>span+span {
   margin-left: 20px;
 }
 
@@ -934,41 +944,115 @@ body {
   right: -200px;
   z-index: -1;
 }
+/* 페이지 4 */
+.page-4 {
+  position:relative;
+  overflow:hidden;
+  height:1010px;
+  background-color:#afafaf;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+.page-4 > .content-box > .title {
+  font-family: 'Signika', sans-serif;
+  /* 폰트 볼드 */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+}
+.page-4 > .content-box > .sub-title {
+  margin-top: 100px;
+  font-size: 72px;
+  line-height: 72px;
+}
+.page-4 > .content-box > .sub-title > span{
+  color: #9C0A1F;
+}
+/* 이미지 슬라이더 */
+
+.slider-1 {
+  position:absolute;
+  width: 100%;
+  bottom: 100px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.slider-1 .item {
+  padding:25px 25px 50px 25px;
+  background-color: #fff;
+}
+
+.slider-1 .item:hover {
+  background-color:#9c0a1f;
+}
+
+.slider-1 .item > .txt-box {
+  height:100px;
+}
+
+.slider-1 > .owl-carousel.owl-theme.owl-loaded > .owl-nav > * {
+  border-radius:0;
+  font-weight:bold;
+  font-size:2rem;
+  position:absolute;
+  top:-30%;
+  transform:translateX(-50%) translateY(-50%);
+  background: none;
+  color: none;
+}
+.slider-1 > .owl-carousel.owl-theme.owl-loaded > .owl-nav > div > i{
+  font-size: 4rem;
+  color: #000000;
+}
+.slider-1 > .owl-carousel.owl-theme.owl-loaded > .owl-nav > div:hover > i{
+  color: #9c0a1f;
+}
+
+.slider-1 > .owl-carousel.owl-theme.owl-loaded > .owl-nav > :first-child {
+  left:calc(50% + 500px);
+}
+
+.slider-1 > .owl-carousel.owl-theme.owl-loaded > .owl-nav > :last-child {
+  left:calc(50% + 600px);
+}
+
+
 
 /* 채용 */
-.page-4 {
+.page-5 {
   height: 670px;
   overflow: hidden;
 }
 
-.page-4 .con {
+.page-5 .con {
   position: relative;
   height: 100%;
 }
 
-.page-4>.con>.circle-img1 {
+.page-5>.con>.circle-img1 {
   position: absolute;
   bottom: 100px;
   left: -300px;
 }
 
-.page-4>.con>.circle-img2 {
+.page-5>.con>.circle-img2 {
   position: absolute;
   top: 0;
   right: -200px;
 }
 
-.page-4>.con>div.img-box {
+.page-5>.con>div.img-box {
   margin-top: 120px;
   width: 30%;
 }
 
-.page-4 .con .img-box img {
+.page-5 .con .img-box img {
   display: block;
   width: 100%;
 }
 
-.page-4>.con>div>.head>h2 {
+.page-5>.con>div>.head>h2 {
   font-weight: 800;
   font-size: 26px;
   line-height: 42px;
@@ -979,7 +1063,7 @@ body {
   margin-top: 100px;
 }
 
-.page-4>.con>div>.head>h1 {
+.page-5>.con>div>.head>h1 {
   font-weight: 400;
   font-size: 72px;
   line-height: 80px;
@@ -989,12 +1073,13 @@ body {
   margin-top: 50px;
 }
 
-.page-4>.con>div>.head>h1>span {
+.page-5>.con>div>.head>h1>span {
   font-weight: 600;
   font-size: 72px;
   letter-spacing: 5px;
   color: #000;
 }
+
 
 /* 하단바 */
 .footer-bar {
@@ -1017,6 +1102,19 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #CCCCCC;
+}
+
+.footer-bar>.con>.txt-box-2>.head>div {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer-bar>.con>.txt-box-2>.head>div {
+  margin-right: 40px;
+}
+.footer-bar>.con>.txt-box-2>.body>div {
+  margin-right: 20px;
 }
 
 /* 따라다니는 풋바 */
@@ -1058,9 +1156,12 @@ body {
   vertical-align: top;
   border-radius: 6px;
 }
-.foot-bar>.con>.info-2>.dash{
+
+.foot-bar>.con>.info-2>.dash {
   width: 10px;
   height: 2px;
   font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: #999;
 }

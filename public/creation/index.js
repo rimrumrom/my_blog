@@ -157,6 +157,17 @@ function ActiveOnVisible__checkAndActive() {
       }
   });
 }
+function Slider1__init() {
+  $('.slider-1 > .owl-carousel').owlCarousel({
+    items:5,
+    loop:true,
+    margin:20,
+    center:true,
+    nav:true,
+    navText:['<i class="fas fa-arrow-alt-circle-left"></i>', '<i class="fas fa-arrow-alt-circle-right"></i>'],
+    dots:false
+  });
+}
 
 
 $(function(){
@@ -164,4 +175,5 @@ $(function(){
   FootBar__init();
   TopBar__init();
   ActiveOnVisible__init();
+  Slider1__init();
 })

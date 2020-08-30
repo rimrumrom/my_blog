@@ -18,7 +18,9 @@
 
     <!-- 아울 캐러셀 불러오기, 제이쿼리 보다 밑에 있어야 합니다. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js"></script>
@@ -301,8 +303,172 @@
             </div>
         </div>
     </div>
+    <!-- 리뷰 슬라이더 -->
+    <div class="page-4">
+        <div class="content-box con">
+            <div class="title flex">
+                <!-- 여기에 아이콘 넣으세용 -->
+                <div class="icon">
+                    <img src="https://rimrumrom.github.io/img1/creation/people-2.png" alt="">
+                </div>
+                <div class="txt">REVIEW</div>
+            </div>
+            <div class="sub-title">
+                고객과 <span>소통하다.</span>
+            </div>
+        </div>
+        <div class="slider-1">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190822286640.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190731798184.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607428397.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607343918.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        글
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 채용 -->
-    <div class="page-4 con-min-width active-on-visible" data-active-on-visible-diff-y="-400">
+    <div class="page-5 con-min-width active-on-visible" data-active-on-visible-diff-y="-400">
         <div class="con flex flex-jc-sb">
             <div class="txt-box">
                 <div class="head">
@@ -329,7 +495,7 @@
                 <input type="text" class="name" placeholder="이름" maxlength="20">
             </div>
             <div class="info-2 flex flex-ai-c">
-                <input type="text" class="num-1" placeholder="" maxlength="20">
+                <input type="text" class="num-1" placeholder="연락처" maxlength="20">
                 <span class="dash"></span>
                 <input type="text" class="num-2" placeholder="" maxlength="20">
                 <span class="dash"></span>
@@ -354,9 +520,20 @@
                 </div>
             </div>
             <div class="txt-box txt-box-2">
-                <div class="head">
-                    <div></div>
-                    <div></div>
+                <div class="head flex">
+                    <div>채용안내</div>
+                    <div>개인정보처리방침</div>
+                    <div>이용약관</div>
+                    <div>사이트맵</div>
+                </div>
+                <div class="body flex">
+                    <div class="img">
+                        <img src="https://rimrumrom.github.io/img1/creation/footer-icon-call.png" alt="">
+                    </div>
+                    <div class="txt">
+                        <div>고객센터 : 042-1234-1234 | 주문번호 : 1588-8282</div>
+                        <div>창업문의 : 042-541-3388</div>
+                    </div>
                 </div>
             </div>
         </div>
