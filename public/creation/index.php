@@ -288,11 +288,14 @@
             </div>
             <div class="txt-box">
                 <div class="head">
-                    <h2>
-                        <span><img src="https://rimrumrom.github.io/img1/creation/mobile-alt-solid.png" alt=""></span>
-                        <span>MOBILE ORDER</span>
+                    <h2 class="flex flex-ai-c">
+                        <span class="img-box"><img src="https://rimrumrom.github.io/img1/creation/mobile-alt-solid.png"
+                                alt=""></span>
+                        <span class="txt">MOBILE ORDER</span>
                     </h2>
-                    <h1>배달도 되고,<br><span> 선물도 됩니다.</span><br><span>태봉이푸드.</span></h1>
+                </div>
+                <div class="body">
+                    배달도 되고,<br><span> 선물도 됩니다.</span><br><span>태봉이푸드.</span>
                 </div>
             </div>
             <div class="circel circle-img1">
@@ -306,10 +309,10 @@
     <!-- 리뷰 슬라이더 -->
     <div class="page-4">
         <div class="content-box con">
-            <div class="title flex">
+            <div class="title flex flex flex-ai-c">
                 <!-- 여기에 아이콘 넣으세용 -->
                 <div class="icon">
-                    <img src="https://rimrumrom.github.io/img1/creation/people-2.png" alt="">
+                    <img src="https://rimrumrom.github.io/img1/creation/slider-icon.png" alt="">
                 </div>
                 <div class="txt">REVIEW</div>
             </div>
@@ -320,151 +323,127 @@
         <div class="slider-1">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190822286640.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="https://rimrumrom.github.io/img1/creation/slider-img-1.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <div>codu****</div>
+                            <div>가성비로 주문했는데 가심비네요ㅎㅎ....</div>
+                            <div>네이버 쇼핑</div>
+                        </div>
+                    </a>
                 </div>
                 <div class="item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="https://rimrumrom.github.io/img1/creation/slider-img-2.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <div>bini****</div>
+                            <div>닭발 뜯는 재미와 스트레스 확 풀리는 맛있는....</div>
+                            <div>인스타그램</div>
+                        </div>
+                    </a>
+                </div>
+                <<div class="item">
+                    <a href="#">
+                        <div class="img-box">
+                            <img src="https://rimrumrom.github.io/img1/creation/slider-img-3.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                            <div>phj8****</div>
+                            <div>우와ㅡ진짜 맛있어요 매콤하고 양도 많네요....</div>
+                            <div>네이버 쇼핑</div>
+                        </div>
+                    </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190731798184.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-4.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>qkrc****</div>
+                        <div>배달 받아서 손님들에게 대접했는데....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607428397.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-5.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>phj8****</div>
+                        <div>우와ㅡ진짜 맛있어요 매콤하고 양도 많네요....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607343918.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-6.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>phj8****</div>
+                        <div>우와ㅡ진짜 맛있어요 매콤하고 양도 많네요....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-7.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>ttlt****</div>
+                        <div>무슨말이 필요하겠어요.출출할때 스트레스....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-8.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>yeon****</div>
+                        <div>박태봉이닭발,국물닭발,돼지껍데기로 닭 파티....</div>
+                        <div>인스타그램</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-9.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>wjj6****</div>
+                        <div>진짜 가성비 최고최고....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
                     <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
+                        <img src="https://rimrumrom.github.io/img1/creation/slider-img-10.png" alt="">
                     </div>
                     <div class="txt-box">
-                        글
+                        <div>phj8****</div>
+                        <div>우와ㅡ진짜 맛있어요 매콤하고 양도 많네요....</div>
+                        <div>네이버 쇼핑</div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-box">
-                        <img src="http://www.jawsfood.co.kr/uploads/sbanner/20190607654235.png" alt="">
-                    </div>
-                    <div class="txt-box">
-                        글
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- 채용 -->
