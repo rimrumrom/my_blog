@@ -953,7 +953,7 @@ body {
 }
 
 .page-4>.content-box>.sub-title {
-  margin-top: 50px;
+  margin-top: 45px;
   font-size: 72px;
   line-height: 72px;
 }
@@ -1002,7 +1002,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
   position: absolute;
-  top: -30%;
+  top: -20%;
   transform: translateX(-50%) translateY(-50%);
   background: none;
   color: none;
@@ -1018,11 +1018,11 @@ body {
 }
 
 .slider-1>.owl-carousel.owl-theme.owl-loaded>.owl-nav> :first-child {
-  left: calc(50% + 500px);
+  left: calc(50% + 380px);
 }
 
 .slider-1>.owl-carousel.owl-theme.owl-loaded>.owl-nav> :last-child {
-  left: calc(50% + 600px);
+  left: calc(50% + 500px);
 }
 
 
